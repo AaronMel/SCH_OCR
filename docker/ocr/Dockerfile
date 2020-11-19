@@ -25,12 +25,10 @@ RUN apt-get autoremove
 ADD . /home/App
 WORKDIR /home/App
 
-
 COPY pip3install.conf .
 RUN pip3 install -r pip3install.conf
 
-COPY src/ .
-VOLUME ["/data"]
 
+# CMD ["python3","main.py"]
 
 CMD ["python3","app.py"]

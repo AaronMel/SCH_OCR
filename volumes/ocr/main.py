@@ -7,14 +7,14 @@ output_path2 = './output/imageDebug2.jpg'
 ocr_cz = SolutionOCR("ces", 5)
 output = ocr_cz.OCR(ImageFile)
 imageDebug(ImageFile, output, output_path1)
-
-# imageDebug(ImageFile, output, output_path1)
+output = ocr_cz.filter(output)
+imageDebug(ImageFile, output, output_path2)
 
 
 
 outputTextFile_path = './output/imageLog.txt'
-textFile = open(outputTextFile_path, 'w+')
+textFile = open(outputTextFile_path, 'w+', encoding='utf-8')
 for i in range(len(output["data"])):
-    print(str(output["data"][i]))
+    # print(str(output["data"][i]))
     textFile.write(str(output["data"][i]) + '\n')
 textFile.close()
