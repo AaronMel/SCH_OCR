@@ -15,7 +15,7 @@ def rectangle2(draw, x, y, lenght, height, Outline):
 def chackNumberAndUnits(input, units):
     for unit in units:
         a = "[0-9]+(" + unit + ")"
-        b = "[0-9]+[\.\,][0-9]+(" + unit + ")"
+        b = "[0-9]+[\\.\\,][0-9]+(" + unit + ")"
         if None != re.match(a, input.lower()) or None != re.match(b, input.lower()):
             return unit
     return None
@@ -23,7 +23,7 @@ def chackNumberAndUnits(input, units):
 
 def chackUnits(input, units):
     for unit in units:
-        a = "(" + unit + "\.*)$"
+        a = "(" + unit + "\\.*)$"
         if None != re.match(a, input.lower()):
             return unit
     return None
@@ -107,16 +107,16 @@ class SolutionOCR:
             if rawOcrText.isspace() or not rawOcrText:
                 print(str(ID) + " - " + str(record["confPts"]) + " - " + "\" \" - " + str(record["rawOcrText"]))
                 pass
-            elif None != re.match('(\ *\.\.\.\.+\ *)', rawOcrText):
+            elif None != re.match('(\\ *\\.\\.\\.\\.+\\ *)', rawOcrText):
                 print(str(ID) + " - " + str(record["confPts"]) + " - " + "\"..\" - " + str(record["rawOcrText"]))
                 pass
-            elif None != re.match('(\ *\—\—+\ *)', rawOcrText):
+            elif None != re.match('(\\ *\\—\\—+\\ *)', rawOcrText):
                 print(str(ID)+ " - " + str(record["confPts"]) + " - " + "\"——\" - " + str(record["rawOcrText"]))
                 pass
-            elif None != re.match('(\ *\-\-+\ *)', rawOcrText):
+            elif None != re.match('(\\ *\\-\\-+\\ *)', rawOcrText):
                 print(str(ID) + " - " + str(record["confPts"]) + " - " + "\"--\" -" + str(record["rawOcrText"]))
                 pass
-            elif None != re.match('(\ *\|+\ *)', rawOcrText):
+            elif None != re.match('(\\ *\\|+\\ *)', rawOcrText):
                 print(str(ID) + " - " + str(record["confPts"]) + " - " + "\"|\" - " + str(record["rawOcrText"]))
                 pass
             else:
@@ -144,12 +144,12 @@ class SolutionOCR:
                     record["typeOfObject"] = "time"
                     output["data"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - " + str(record["ocrText"]))
-                elif None != re.match('[0-9][0-9][\.\/][0-9][0-9][\.\/][0-9][0-9]+', rawOcrText):
+                elif None != re.match('[0-9][0-9][\\.\\/][0-9][0-9][\\.\\/][0-9][0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "date"
                     output["data"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - " + str(record["ocrText"]))
-                elif None != re.match('[0-9]+[\.\,][0-9]+', rawOcrText) and None == re.search('[a-z]', rawOcrText.lower()):
+                elif None != re.match('[0-9]+[\\.\\,][0-9]+', rawOcrText) and None == re.search('[a-z]', rawOcrText.lower()):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "decimal number"
                     output["data"].append(record)
