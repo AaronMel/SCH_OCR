@@ -1,4 +1,2 @@
 import re
-print("ahoj")
-rawOcrText = "žýá "
-print(None != re.match('(\ *--+\ *)', rawOcrText))
+print(re.search('[a-z]', "2"))
