@@ -1,0 +1,591 @@
+{'codeName': '5', 'x': 220, 'y': 77, 'w': 12, 'h': 16, 'ocrText': '9', 'rawOcrText': '9', 'confPts': 68, 'typeOfObject': 'integer number'}
+{'codeName': '6', 'x': 240, 'y': 77, 'w': 60, 'h': 17, 'ocrText': '971,74', 'rawOcrText': '971,74', 'confPts': 36, 'typeOfObject': 'decimal number'}
+{'codeName': '7', 'x': 308, 'y': 77, 'w': 31, 'h': 16, 'ocrText': 'CZK', 'rawOcrText': 'CZK', 'confPts': 79, 'typeOfObject': 'currencie'}
+{'codeName': '8', 'x': 1552, 'y': 78, 'w': 67, 'h': 16, 'ocrText': 'Strama:', 'rawOcrText': 'Strama:', 'confPts': 48, 'typeOfObject': 'word'}
+{'codeName': '9', 'x': 1631, 'y': 78, 'w': 10, 'h': 15, 'ocrText': '2', 'rawOcrText': '2', 'confPts': 92, 'typeOfObject': 'integer number'}
+{'codeName': '11', 'x': 114, 'y': 106, 'w': 69, 'h': 16, 'ocrText': 'Falta', 'rawOcrText': 'Falta', 'confPts': 9, 'typeOfObject': 'word'}
+{'codeName': '12', 'x': 192, 'y': 106, 'w': 18, 'h': 16, 'ocrText': 'Č.', 'rawOcrText': 'Č.', 'confPts': 79, 'typeOfObject': 'unit'}
+{'codeName': '14', 'x': 240, 'y': 107, 'w': 22, 'h': 15, 'ocrText': 'WS', 'rawOcrText': 'WS', 'confPts': 42, 'typeOfObject': 'word'}
+{'codeName': '15', 'x': 273, 'y': 111, 'w': 5, 'h': 11, 'ocrText': 's', 'rawOcrText': 's', 'confPts': 30, 'typeOfObject': 'unit'}
+{'codeName': '36', 'x': 119, 'y': 138, 'w': 51, 'h': 17, 'ocrText': 'čísle', 'rawOcrText': 'čísle', 'confPts': 71, 'typeOfObject': 'word'}
+{'codeName': '37', 'x': 178, 'y': 138, 'w': 48, 'h': 17, 'ocrText': 'zaří', 'rawOcrText': 'zaří', 'confPts': 8, 'typeOfObject': 'unknown'}
+{'codeName': '39', 'x': 254, 'y': 138, 'w': 48, 'h': 19, 'ocrText': 'pačet', 'rawOcrText': 'pačet', 'confPts': 35, 'typeOfObject': 'unknown'}
+{'codeName': '41', 'x': 337, 'y': 139, 'w': 50, 'h': 16, 'ocrText': 'mášew', 'rawOcrText': 'mášew', 'confPts': 33, 'typeOfObject': 'unknown'}
+{'codeName': '42', 'x': 397, 'y': 139, 'w': 48, 'h': 16, 'ocrText': 'zhaží', 'rawOcrText': 'zhaží', 'confPts': 11, 'typeOfObject': 'unknown'}
+{'codeName': '43', 'x': 725, 'y': 139, 'w': 88, 'h': 17, 'ocrText': 'zákl.cena', 'rawOcrText': 'zákl.cena', 'confPts': 33, 'typeOfObject': 'unknown'}
+{'codeName': '44', 'x': 838, 'y': 139, 'w': 49, 'h': 17, 'ocrText': 'slewa', 'rawOcrText': 'slewa', 'confPts': 75, 'typeOfObject': 'unknown'}
+{'codeName': '46', 'x': 921, 'y': 143, 'w': 40, 'h': 13, 'ocrText': 'cena', 'rawOcrText': 'cena', 'confPts': 42, 'typeOfObject': 'word'}
+{'codeName': '47', 'x': 969, 'y': 143, 'w': 22, 'h': 15, 'ocrText': 'pe', 'rawOcrText': 'pe', 'confPts': 46, 'typeOfObject': 'unknown'}
+{'codeName': '48', 'x': 1029, 'y': 140, 'w': 46, 'h': 19, 'ocrText': 'jem.', 'rawOcrText': 'jem.', 'confPts': 47, 'typeOfObject': 'unknown'}
+{'codeName': '49', 'x': 1093, 'y': 143, 'w': 41, 'h': 13, 'ocrText': 'cema', 'rawOcrText': 'cema', 'confPts': 70, 'typeOfObject': 'unknown'}
+{'codeName': '50', 'x': 1142, 'y': 143, 'w': 21, 'h': 13, 'ocrText': 'za', 'rawOcrText': 'za', 'confPts': 87, 'typeOfObject': 'word'}
+{'codeName': '51', 'x': 1170, 'y': 140, 'w': 22, 'h': 16, 'ocrText': 'MU', 'rawOcrText': 'MU', 'confPts': 90, 'typeOfObject': 'word'}
+{'codeName': '52', 'x': 1204, 'y': 143, 'w': 40, 'h': 13, 'ocrText': 'cema', 'rawOcrText': 'cema', 'confPts': 86, 'typeOfObject': 'unknown'}
+{'codeName': '53', 'x': 1253, 'y': 139, 'w': 60, 'h': 17, 'ocrText': 'celkem', 'rawOcrText': 'celkem', 'confPts': 87, 'typeOfObject': 'word'}
+{'codeName': '54', 'x': 1335, 'y': 140, 'w': 51, 'h': 16, 'ocrText': 'BPM%', 'rawOcrText': 'BPM%', 'confPts': 54, 'typeOfObject': 'unknown'}
+{'codeName': '55', 'x': 1408, 'y': 140, 'w': 32, 'h': 16, 'ocrText': 'BM', 'rawOcrText': 'BM', 'confPts': 50, 'typeOfObject': 'word'}
+{'codeName': '56', 'x': 1450, 'y': 140, 'w': 47, 'h': 18, 'ocrText': '(CZK)', 'rawOcrText': '(CZK)', 'confPts': 68, 'typeOfObject': 'currencie'}
+{'codeName': '57', 'x': 1519, 'y': 140, 'w': 61, 'h': 16, 'ocrText': 'Celkem', 'rawOcrText': 'Celkem', 'confPts': 66, 'typeOfObject': 'word'}
+{'codeName': '58', 'x': 1588, 'y': 143, 'w': 10, 'h': 13, 'ocrText': 's', 'rawOcrText': 's', 'confPts': 92, 'typeOfObject': 'unit'}
+{'codeName': '59', 'x': 1606, 'y': 140, 'w': 32, 'h': 16, 'ocrText': 'BW', 'rawOcrText': 'BW', 'confPts': 45, 'typeOfObject': 'unknown'}
+{'codeName': '61', 'x': 253, 'y': 163, 'w': 22, 'h': 16, 'ocrText': 'o', 'rawOcrText': 'o', 'confPts': 36, 'typeOfObject': 'word'}
+{'codeName': '62', 'x': 721, 'y': 165, 'w': 95, 'h': 18, 'ocrText': '(etmotka)', 'rawOcrText': '(etmotka)', 'confPts': 29, 'typeOfObject': 'unknown'}
+{'codeName': '63', 'x': 931, 'y': 164, 'w': 50, 'h': 17, 'ocrText': 'slevě', 'rawOcrText': 'slevě', 'confPts': 17, 'typeOfObject': 'word'}
+{'codeName': '65', 'x': 1028, 'y': 165, 'w': 41, 'h': 15, 'ocrText': 'VM', 'rawOcrText': 'VM', 'confPts': 13, 'typeOfObject': 'unknown'}
+{'codeName': '66', 'x': 1206, 'y': 165, 'w': 37, 'h': 16, 'ocrText': '(bee', 'rawOcrText': '(bee', 'confPts': 49, 'typeOfObject': 'unknown'}
+{'codeName': '67', 'x': 1252, 'y': 165, 'w': 39, 'h': 16, 'ocrText': 'BP)', 'rawOcrText': 'BP)', 'confPts': 17, 'typeOfObject': 'unknown'}
+{'codeName': '69', 'x': 121, 'y': 197, 'w': 58, 'h': 16, 'ocrText': 'EO', 'rawOcrText': 'EO', 'confPts': 18, 'typeOfObject': 'unknown'}
+{'codeName': '70', 'x': 262, 'y': 198, 'w': 48, 'h': 16, 'ocrText': '1,000', 'rawOcrText': '1,000', 'confPts': 75, 'typeOfObject': 'decimal number'}
+{'codeName': '72', 'x': 338, 'y': 198, 'w': 58, 'h': 16, 'ocrText': 'MNT', 'rawOcrText': 'MNT', 'confPts': 29, 'typeOfObject': 'unknown'}
+{'codeName': '73', 'x': 406, 'y': 198, 'w': 59, 'h': 16, 'ocrText': 'SELSKÝ', 'rawOcrText': 'SELSKÝ', 'confPts': 88, 'typeOfObject': 'word'}
+{'codeName': '74', 'x': 474, 'y': 198, 'w': 40, 'h': 16, 'ocrText': 'BĚLÝ', 'rawOcrText': 'BĚLÝ', 'confPts': 81, 'typeOfObject': 'unknown'}
+{'codeName': '75', 'x': 524, 'y': 198, 'w': 40, 'h': 17, 'ocrText': '3,0%', 'rawOcrText': '3,0%', 'confPts': 81, 'typeOfObject': 'decimal number'}
+{'codeName': '76', 'x': 573, 'y': 198, 'w': 39, 'h': 16, 'ocrText': '3006', 'rawOcrText': '3006', 'confPts': 33, 'typeOfObject': 'integer number'}
+{'codeName': '79', 'x': 959, 'y': 199, 'w': 60, 'h': 16, 'ocrText': '29,3', 'rawOcrText': '29,3', 'confPts': 11, 'typeOfObject': 'decimal number'}
+{'codeName': '80', 'x': 1041, 'y': 199, 'w': 8, 'h': 16, 'ocrText': '4', 'rawOcrText': '4', 'confPts': 72, 'typeOfObject': 'integer number'}
+{'codeName': '81', 'x': 1146, 'y': 199, 'w': 60, 'h': 16, 'ocrText': '29,36', 'rawOcrText': '29,36', 'confPts': 80, 'typeOfObject': 'decimal number'}
+{'codeName': '82', 'x': 1271, 'y': 199, 'w': 59, 'h': 16, 'ocrText': '49,36', 'rawOcrText': '49,36', 'confPts': 70, 'typeOfObject': 'decimal number'}
+{'codeName': '83', 'x': 1342, 'y': 199, 'w': 40, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 88, 'typeOfObject': 'decimal number'}
+{'codeName': '84', 'x': 1461, 'y': 199, 'w': 51, 'h': 17, 'ocrText': '40,40', 'rawOcrText': '40,40', 'confPts': 44, 'typeOfObject': 'decimal number'}
+{'codeName': '85', 'x': 1577, 'y': 199, 'w': 59, 'h': 16, 'ocrText': '305,76', 'rawOcrText': '305,76', 'confPts': 77, 'typeOfObject': 'decimal number'}
+{'codeName': '89', 'x': 197, 'y': 227, 'w': 89, 'h': 17, 'ocrText': 'TR', 'rawOcrText': 'TR', 'confPts': 10, 'typeOfObject': 'unknown'}
+{'codeName': '92', 'x': 259, 'y': 257, 'w': 51, 'h': 17, 'ocrText': '4,000', 'rawOcrText': '4,000', 'confPts': 44, 'typeOfObject': 'decimal number'}
+{'codeName': '93', 'x': 337, 'y': 257, 'w': 31, 'h': 16, 'ocrText': 'ARO', 'rawOcrText': 'ARO', 'confPts': 68, 'typeOfObject': 'word'}
+{'codeName': '95', 'x': 454, 'y': 257, 'w': 60, 'h': 17, 'ocrText': 'KULATÉ', 'rawOcrText': 'KULATÉ', 'confPts': 63, 'typeOfObject': 'word'}
+{'codeName': '96', 'x': 523, 'y': 257, 'w': 50, 'h': 18, 'ocrText': '2,546', 'rawOcrText': '2,546', 'confPts': 29, 'typeOfObject': 'decimal number'}
+{'codeName': '97', 'x': 781, 'y': 258, 'w': 51, 'h': 17, 'ocrText': '94,00', 'rawOcrText': '94,00', 'confPts': 46, 'typeOfObject': 'decimal number'}
+{'codeName': '98', 'x': 968, 'y': 258, 'w': 51, 'h': 17, 'ocrText': '34,90', 'rawOcrText': '34,90', 'confPts': 60, 'typeOfObject': 'decimal number'}
+{'codeName': '99', 'x': 1041, 'y': 259, 'w': 7, 'h': 15, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 53, 'typeOfObject': 'word'}
+{'codeName': '100', 'x': 1155, 'y': 258, 'w': 51, 'h': 17, 'ocrText': '94,90', 'rawOcrText': '94,90', 'confPts': 57, 'typeOfObject': 'decimal number'}
+{'codeName': '101', 'x': 1271, 'y': 258, 'w': 59, 'h': 17, 'ocrText': '379,60', 'rawOcrText': '379,60', 'confPts': 90, 'typeOfObject': 'decimal number'}
+{'codeName': '102', 'x': 1343, 'y': 259, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 92, 'typeOfObject': 'decimal number'}
+{'codeName': '103', 'x': 1461, 'y': 258, 'w': 50, 'h': 17, 'ocrText': '56,04', 'rawOcrText': '56,04', 'confPts': 69, 'typeOfObject': 'decimal number'}
+{'codeName': '104', 'x': 1576, 'y': 258, 'w': 59, 'h': 17, 'ocrText': '406,54', 'rawOcrText': '406,54', 'confPts': 36, 'typeOfObject': 'decimal number'}
+{'codeName': '107', 'x': 260, 'y': 287, 'w': 50, 'h': 17, 'ocrText': '2,000', 'rawOcrText': '2,000', 'confPts': 50, 'typeOfObject': 'decimal number'}
+{'codeName': '109', 'x': 337, 'y': 287, 'w': 31, 'h': 16, 'ocrText': 'ARO', 'rawOcrText': 'ARO', 'confPts': 70, 'typeOfObject': 'word'}
+{'codeName': '110', 'x': 376, 'y': 284, 'w': 40, 'h': 19, 'ocrText': 'SMĚS', 'rawOcrText': 'SMĚS', 'confPts': 83, 'typeOfObject': 'word'}
+{'codeName': '112', 'x': 543, 'y': 287, 'w': 49, 'h': 20, 'ocrText': '2,5kg', 'rawOcrText': '2,5kg', 'confPts': 26, 'typeOfObject': 'decimal number'}
+{'codeName': '113', 'x': 782, 'y': 288, 'w': 50, 'h': 17, 'ocrText': '76,50', 'rawOcrText': '76,50', 'confPts': 69, 'typeOfObject': 'decimal number'}
+{'codeName': '114', 'x': 970, 'y': 288, 'w': 49, 'h': 17, 'ocrText': '76,50', 'rawOcrText': '76,50', 'confPts': 71, 'typeOfObject': 'decimal number'}
+{'codeName': '115', 'x': 1041, 'y': 288, 'w': 8, 'h': 16, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 69, 'typeOfObject': 'integer number'}
+{'codeName': '116', 'x': 1156, 'y': 288, 'w': 50, 'h': 17, 'ocrText': '78,50', 'rawOcrText': '78,50', 'confPts': 63, 'typeOfObject': 'decimal number'}
+{'codeName': '117', 'x': 1272, 'y': 288, 'w': 58, 'h': 17, 'ocrText': '357,00', 'rawOcrText': '357,00', 'confPts': 65, 'typeOfObject': 'decimal number'}
+{'codeName': '118', 'x': 1343, 'y': 288, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 90, 'typeOfObject': 'decimal number'}
+{'codeName': '119', 'x': 1462, 'y': 288, 'w': 50, 'h': 17, 'ocrText': '2,55', 'rawOcrText': '2,55', 'confPts': 85, 'typeOfObject': 'decimal number'}
+{'codeName': '120', 'x': 1578, 'y': 288, 'w': 58, 'h': 17, 'ocrText': '180,55', 'rawOcrText': '180,55', 'confPts': 47, 'typeOfObject': 'decimal number'}
+{'codeName': '122', 'x': 120, 'y': 316, 'w': 59, 'h': 16, 'ocrText': 'D6', 'rawOcrText': 'D6', 'confPts': 46, 'typeOfObject': 'unknown'}
+{'codeName': '123', 'x': 259, 'y': 317, 'w': 51, 'h': 17, 'ocrText': '4,080', 'rawOcrText': '4,080', 'confPts': 50, 'typeOfObject': 'decimal number'}
+{'codeName': '125', 'x': 406, 'y': 317, 'w': 50, 'h': 19, 'ocrText': '25k', 'rawOcrText': '25k', 'confPts': 34, 'typeOfObject': 'integer number'}
+{'codeName': '126', 'x': 648, 'y': 318, 'w': 14, 'h': 18, 'ocrText': 'e', 'rawOcrText': 'e', 'confPts': 83, 'typeOfObject': 'unknown'}
+{'codeName': '127', 'x': 781, 'y': 317, 'w': 51, 'h': 18, 'ocrText': '23,50', 'rawOcrText': '23,50', 'confPts': 39, 'typeOfObject': 'decimal number'}
+{'codeName': '128', 'x': 968, 'y': 317, 'w': 51, 'h': 18, 'ocrText': '63,50', 'rawOcrText': '63,50', 'confPts': 46, 'typeOfObject': 'decimal number'}
+{'codeName': '129', 'x': 1041, 'y': 318, 'w': 8, 'h': 15, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 60, 'typeOfObject': 'integer number'}
+{'codeName': '130', 'x': 1155, 'y': 317, 'w': 51, 'h': 18, 'ocrText': '63,50', 'rawOcrText': '63,50', 'confPts': 46, 'typeOfObject': 'decimal number'}
+{'codeName': '131', 'x': 1271, 'y': 317, 'w': 59, 'h': 18, 'ocrText': '334,00', 'rawOcrText': '334,00', 'confPts': 81, 'typeOfObject': 'decimal number'}
+{'codeName': '132', 'x': 1343, 'y': 318, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 88, 'typeOfObject': 'decimal number'}
+{'codeName': '133', 'x': 1461, 'y': 318, 'w': 51, 'h': 17, 'ocrText': '50,16', 'rawOcrText': '50,16', 'confPts': 53, 'typeOfObject': 'decimal number'}
+{'codeName': '134', 'x': 1577, 'y': 318, 'w': 59, 'h': 17, 'ocrText': '4,10', 'rawOcrText': '4,10', 'confPts': 37, 'typeOfObject': 'decimal number'}
+{'codeName': '136', 'x': 120, 'y': 346, 'w': 59, 'h': 16, 'ocrText': '262219', 'rawOcrText': '262219', 'confPts': 63, 'typeOfObject': 'integer number'}
+{'codeName': '137', 'x': 262, 'y': 347, 'w': 48, 'h': 16, 'ocrText': '1,080', 'rawOcrText': '1,080', 'confPts': 33, 'typeOfObject': 'decimal number'}
+{'codeName': '139', 'x': 406, 'y': 347, 'w': 50, 'h': 17, 'ocrText': '2,506', 'rawOcrText': '2,506', 'confPts': 45, 'typeOfObject': 'decimal number'}
+{'codeName': '140', 'x': 648, 'y': 348, 'w': 14, 'h': 17, 'ocrText': 'e', 'rawOcrText': 'e', 'confPts': 90, 'typeOfObject': 'unknown'}
+{'codeName': '141', 'x': 774, 'y': 347, 'w': 58, 'h': 17, 'ocrText': '138,00', 'rawOcrText': '138,00', 'confPts': 66, 'typeOfObject': 'decimal number'}
+{'codeName': '142', 'x': 961, 'y': 347, 'w': 58, 'h': 17, 'ocrText': '139,00', 'rawOcrText': '139,00', 'confPts': 83, 'typeOfObject': 'decimal number'}
+{'codeName': '143', 'x': 1041, 'y': 348, 'w': 8, 'h': 16, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 42, 'typeOfObject': 'word'}
+{'codeName': '144', 'x': 1148, 'y': 347, 'w': 58, 'h': 17, 'ocrText': '138,00', 'rawOcrText': '138,00', 'confPts': 58, 'typeOfObject': 'decimal number'}
+{'codeName': '145', 'x': 1273, 'y': 347, 'w': 58, 'h': 18, 'ocrText': '139,00', 'rawOcrText': '139,00', 'confPts': 69, 'typeOfObject': 'decimal number'}
+{'codeName': '146', 'x': 1343, 'y': 347, 'w': 39, 'h': 18, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 96, 'typeOfObject': 'decimal number'}
+{'codeName': '147', 'x': 1462, 'y': 347, 'w': 50, 'h': 17, 'ocrText': '20,45', 'rawOcrText': '20,45', 'confPts': 64, 'typeOfObject': 'decimal number'}
+{'codeName': '148', 'x': 1579, 'y': 347, 'w': 57, 'h': 17, 'ocrText': '159,05', 'rawOcrText': '159,05', 'confPts': 62, 'typeOfObject': 'decimal number'}
+{'codeName': '150', 'x': 119, 'y': 376, 'w': 60, 'h': 16, 'ocrText': '416128', 'rawOcrText': '416128', 'confPts': 61, 'typeOfObject': 'integer number'}
+{'codeName': '151', 'x': 259, 'y': 377, 'w': 51, 'h': 16, 'ocrText': '2,080', 'rawOcrText': '2,080', 'confPts': 36, 'typeOfObject': 'decimal number'}
+{'codeName': '152', 'x': 336, 'y': 377, 'w': 21, 'h': 16, 'ocrText': 'MMC', 'rawOcrText': 'MMC', 'confPts': 39, 'typeOfObject': 'unknown'}
+{'codeName': '153', 'x': 366, 'y': 377, 'w': 41, 'h': 16, 'ocrText': 'BRDY', 'rawOcrText': 'BRDY', 'confPts': 42, 'typeOfObject': 'word'}
+{'codeName': '154', 'x': 415, 'y': 377, 'w': 70, 'h': 16, 'ocrText': 'KAROTKA', 'rawOcrText': 'KAROTKA', 'confPts': 57, 'typeOfObject': 'word'}
+{'codeName': '155', 'x': 494, 'y': 377, 'w': 50, 'h': 19, 'ocrText': '25k', 'rawOcrText': '25k', 'confPts': 10, 'typeOfObject': 'integer number'}
+{'codeName': '156', 'x': 774, 'y': 377, 'w': 58, 'h': 17, 'ocrText': '122,00', 'rawOcrText': '122,00', 'confPts': 82, 'typeOfObject': 'decimal number'}
+{'codeName': '157', 'x': 961, 'y': 377, 'w': 58, 'h': 17, 'ocrText': '12,00', 'rawOcrText': '12,00', 'confPts': 84, 'typeOfObject': 'decimal number'}
+{'codeName': '158', 'x': 1041, 'y': 378, 'w': 7, 'h': 15, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 71, 'typeOfObject': 'word'}
+{'codeName': '159', 'x': 1147, 'y': 377, 'w': 59, 'h': 17, 'ocrText': '122,00', 'rawOcrText': '122,00', 'confPts': 78, 'typeOfObject': 'decimal number'}
+{'codeName': '160', 'x': 1270, 'y': 377, 'w': 60, 'h': 17, 'ocrText': '46,00', 'rawOcrText': '46,00', 'confPts': 65, 'typeOfObject': 'decimal number'}
+{'codeName': '161', 'x': 1343, 'y': 377, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 88, 'typeOfObject': 'decimal number'}
+{'codeName': '162', 'x': 1463, 'y': 378, 'w': 49, 'h': 16, 'ocrText': '7.20', 'rawOcrText': '7.20', 'confPts': 44, 'typeOfObject': 'decimal number'}
+{'codeName': '163', 'x': 1576, 'y': 377, 'w': 60, 'h': 17, 'ocrText': '561,20', 'rawOcrText': '561,20', 'confPts': 79, 'typeOfObject': 'decimal number'}
+{'codeName': '165', 'x': 121, 'y': 405, 'w': 58, 'h': 16, 'ocrText': 'tot', 'rawOcrText': 'tot', 'confPts': 13, 'typeOfObject': 'unknown'}
+{'codeName': '166', 'x': 260, 'y': 406, 'w': 50, 'h': 16, 'ocrText': '4,000', 'rawOcrText': '4,000', 'confPts': 45, 'typeOfObject': 'decimal number'}
+{'codeName': '167', 'x': 336, 'y': 406, 'w': 21, 'h': 15, 'ocrText': 'MC', 'rawOcrText': 'MC', 'confPts': 68, 'typeOfObject': 'unknown'}
+{'codeName': '168', 'x': 365, 'y': 405, 'w': 61, 'h': 17, 'ocrText': 'MEDCES', 'rawOcrText': 'MEDCES', 'confPts': 19, 'typeOfObject': 'unknown'}
+{'codeName': '169', 'x': 434, 'y': 406, 'w': 42, 'h': 16, 'ocrText': 'AMER', 'rawOcrText': 'AMER', 'confPts': 76, 'typeOfObject': 'word'}
+{'codeName': '170', 'x': 477, 'y': 406, 'w': 56, 'h': 16, 'ocrText': 'STYLE', 'rawOcrText': 'STYLE', 'confPts': 89, 'typeOfObject': 'word'}
+{'codeName': '171', 'x': 543, 'y': 405, 'w': 49, 'h': 20, 'ocrText': '25k', 'rawOcrText': '25k', 'confPts': 43, 'typeOfObject': 'integer number'}
+{'codeName': '172', 'x': 648, 'y': 407, 'w': 13, 'h': 17, 'ocrText': 'e', 'rawOcrText': 'e', 'confPts': 81, 'typeOfObject': 'unknown'}
+{'codeName': '174', 'x': 961, 'y': 406, 'w': 57, 'h': 17, 'ocrText': '303,74', 'rawOcrText': '303,74', 'confPts': 66, 'typeOfObject': 'decimal number'}
+{'codeName': '175', 'x': 1041, 'y': 407, 'w': 7, 'h': 15, 'ocrText': '3', 'rawOcrText': '3', 'confPts': 48, 'typeOfObject': 'integer number'}
+{'codeName': '176', 'x': 1148, 'y': 406, 'w': 57, 'h': 17, 'ocrText': '103,74', 'rawOcrText': '103,74', 'confPts': 37, 'typeOfObject': 'decimal number'}
+{'codeName': '177', 'x': 1270, 'y': 406, 'w': 60, 'h': 17, 'ocrText': '414,96', 'rawOcrText': '414,96', 'confPts': 55, 'typeOfObject': 'decimal number'}
+{'codeName': '178', 'x': 1343, 'y': 406, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 94, 'typeOfObject': 'decimal number'}
+{'codeName': '179', 'x': 1461, 'y': 406, 'w': 50, 'h': 17, 'ocrText': '62,4', 'rawOcrText': '62,4', 'confPts': 51, 'typeOfObject': 'decimal number'}
+{'codeName': '180', 'x': 1576, 'y': 406, 'w': 60, 'h': 17, 'ocrText': '477,20', 'rawOcrText': '477,20', 'confPts': 78, 'typeOfObject': 'decimal number'}
+{'codeName': '182', 'x': 120, 'y': 435, 'w': 59, 'h': 16, 'ocrText': 'M26', 'rawOcrText': 'M26', 'confPts': 15, 'typeOfObject': 'unknown'}
+{'codeName': '183', 'x': 260, 'y': 435, 'w': 50, 'h': 17, 'ocrText': '2,000', 'rawOcrText': '2,000', 'confPts': 39, 'typeOfObject': 'decimal number'}
+{'codeName': '185', 'x': 415, 'y': 431, 'w': 60, 'h': 20, 'ocrText': 'PŮLENÉ', 'rawOcrText': 'PŮLENÉ', 'confPts': 66, 'typeOfObject': 'word'}
+{'codeName': '186', 'x': 484, 'y': 435, 'w': 50, 'h': 20, 'ocrText': '2,5kg', 'rawOcrText': '2,5kg', 'confPts': 68, 'typeOfObject': 'decimal number'}
+{'codeName': '188', 'x': 774, 'y': 436, 'w': 58, 'h': 17, 'ocrText': '125,00', 'rawOcrText': '125,00', 'confPts': 63, 'typeOfObject': 'decimal number'}
+{'codeName': '189', 'x': 961, 'y': 436, 'w': 58, 'h': 17, 'ocrText': '129,00', 'rawOcrText': '129,00', 'confPts': 79, 'typeOfObject': 'decimal number'}
+{'codeName': '190', 'x': 1041, 'y': 436, 'w': 8, 'h': 16, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 48, 'typeOfObject': 'word'}
+{'codeName': '191', 'x': 1147, 'y': 436, 'w': 59, 'h': 17, 'ocrText': '129,00', 'rawOcrText': '129,00', 'confPts': 78, 'typeOfObject': 'decimal number'}
+{'codeName': '192', 'x': 1271, 'y': 436, 'w': 59, 'h': 16, 'ocrText': '250,00', 'rawOcrText': '250,00', 'confPts': 70, 'typeOfObject': 'decimal number'}
+{'codeName': '193', 'x': 1343, 'y': 436, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 88, 'typeOfObject': 'decimal number'}
+{'codeName': '194', 'x': 1463, 'y': 436, 'w': 49, 'h': 17, 'ocrText': '1,70', 'rawOcrText': '1,70', 'confPts': 62, 'typeOfObject': 'decimal number'}
+{'codeName': '195', 'x': 1577, 'y': 436, 'w': 60, 'h': 17, 'ocrText': '26,76', 'rawOcrText': '26,76', 'confPts': 46, 'typeOfObject': 'decimal number'}
+{'codeName': '198', 'x': 177, 'y': 465, 'w': 13, 'h': 15, 'ocrText': 'A', 'rawOcrText': 'A', 'confPts': 87, 'typeOfObject': 'word'}
+{'codeName': '201', 'x': 121, 'y': 494, 'w': 58, 'h': 16, 'ocrText': 'W762', 'rawOcrText': 'W762', 'confPts': 55, 'typeOfObject': 'unknown'}
+{'codeName': '202', 'x': 260, 'y': 495, 'w': 50, 'h': 17, 'ocrText': '3,000', 'rawOcrText': '3,000', 'confPts': 44, 'typeOfObject': 'decimal number'}
+{'codeName': '206', 'x': 503, 'y': 495, 'w': 70, 'h': 16, 'ocrText': 'KAR-CCA', 'rawOcrText': 'KAR-CCA', 'confPts': 9, 'typeOfObject': 'unknown'}
+{'codeName': '208', 'x': 781, 'y': 496, 'w': 51, 'h': 16, 'ocrText': '41,0', 'rawOcrText': '41,0', 'confPts': 59, 'typeOfObject': 'decimal number'}
+{'codeName': '209', 'x': 968, 'y': 496, 'w': 51, 'h': 16, 'ocrText': '41,90', 'rawOcrText': '41,90', 'confPts': 55, 'typeOfObject': 'decimal number'}
+{'codeName': '210', 'x': 1041, 'y': 496, 'w': 8, 'h': 15, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 86, 'typeOfObject': 'integer number'}
+{'codeName': '211', 'x': 1155, 'y': 496, 'w': 51, 'h': 16, 'ocrText': '21,00', 'rawOcrText': '21,00', 'confPts': 53, 'typeOfObject': 'decimal number'}
+{'codeName': '212', 'x': 1271, 'y': 496, 'w': 59, 'h': 16, 'ocrText': '209,50', 'rawOcrText': '209,50', 'confPts': 89, 'typeOfObject': 'decimal number'}
+{'codeName': '213', 'x': 1343, 'y': 496, 'w': 39, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 92, 'typeOfObject': 'decimal number'}
+{'codeName': '214', 'x': 1462, 'y': 495, 'w': 50, 'h': 17, 'ocrText': '31,43', 'rawOcrText': '31,43', 'confPts': 74, 'typeOfObject': 'decimal number'}
+{'codeName': '215', 'x': 1577, 'y': 495, 'w': 59, 'h': 17, 'ocrText': '240,93', 'rawOcrText': '240,93', 'confPts': 68, 'typeOfObject': 'decimal number'}
+{'codeName': '217', 'x': 120, 'y': 524, 'w': 59, 'h': 16, 'ocrText': '262250', 'rawOcrText': '262250', 'confPts': 75, 'typeOfObject': 'integer number'}
+{'codeName': '218', 'x': 259, 'y': 524, 'w': 51, 'h': 17, 'ocrText': '8,000', 'rawOcrText': '8,000', 'confPts': 46, 'typeOfObject': 'decimal number'}
+{'codeName': '221', 'x': 515, 'y': 525, 'w': 39, 'h': 15, 'ocrText': 'TEC', 'rawOcrText': 'TEC', 'confPts': 16, 'typeOfObject': 'word'}
+{'codeName': '223', 'x': 781, 'y': 525, 'w': 51, 'h': 17, 'ocrText': '4,20', 'rawOcrText': '4,20', 'confPts': 58, 'typeOfObject': 'decimal number'}
+{'codeName': '224', 'x': 968, 'y': 525, 'w': 51, 'h': 17, 'ocrText': '4,20', 'rawOcrText': '4,20', 'confPts': 39, 'typeOfObject': 'decimal number'}
+{'codeName': '225', 'x': 1041, 'y': 525, 'w': 8, 'h': 16, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 89, 'typeOfObject': 'integer number'}
+{'codeName': '226', 'x': 1155, 'y': 525, 'w': 51, 'h': 17, 'ocrText': '0,20', 'rawOcrText': '0,20', 'confPts': 36, 'typeOfObject': 'decimal number'}
+{'codeName': '227', 'x': 1271, 'y': 525, 'w': 59, 'h': 17, 'ocrText': '65,66', 'rawOcrText': '65,66', 'confPts': 20, 'typeOfObject': 'decimal number'}
+{'codeName': '228', 'x': 1343, 'y': 525, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 94, 'typeOfObject': 'decimal number'}
+{'codeName': '229', 'x': 1461, 'y': 525, 'w': 50, 'h': 17, 'ocrText': '57,04', 'rawOcrText': '57,04', 'confPts': 70, 'typeOfObject': 'decimal number'}
+{'codeName': '230', 'x': 1576, 'y': 525, 'w': 59, 'h': 17, 'ocrText': '483,04', 'rawOcrText': '483,04', 'confPts': 34, 'typeOfObject': 'decimal number'}
+{'codeName': '232', 'x': 119, 'y': 554, 'w': 60, 'h': 16, 'ocrText': 'E', 'rawOcrText': 'E', 'confPts': 19, 'typeOfObject': 'unknown'}
+{'codeName': '233', 'x': 261, 'y': 554, 'w': 49, 'h': 17, 'ocrText': '3,006', 'rawOcrText': '3,006', 'confPts': 66, 'typeOfObject': 'decimal number'}
+{'codeName': '235', 'x': 338, 'y': 552, 'w': 48, 'h': 18, 'ocrText': '*ZELÉ', 'rawOcrText': '*ZELÉ', 'confPts': 27, 'typeOfObject': 'unknown'}
+{'codeName': '236', 'x': 396, 'y': 552, 'w': 88, 'h': 18, 'ocrText': 'MLÁV.BÍLÉ', 'rawOcrText': 'MLÁV.BÍLÉ', 'confPts': 15, 'typeOfObject': 'unknown'}
+{'codeName': '237', 'x': 493, 'y': 554, 'w': 40, 'h': 16, 'ocrText': 'RAMÉ', 'rawOcrText': 'RAMÉ', 'confPts': 47, 'typeOfObject': 'unknown'}
+{'codeName': '238', 'x': 542, 'y': 554, 'w': 21, 'h': 16, 'ocrText': 'CZ', 'rawOcrText': 'CZ', 'confPts': 92, 'typeOfObject': 'word'}
+{'codeName': '239', 'x': 571, 'y': 551, 'w': 31, 'h': 19, 'ocrText': 'VÁŽ', 'rawOcrText': 'VÁŽ', 'confPts': 71, 'typeOfObject': 'unknown'}
+{'codeName': '240', 'x': 604, 'y': 554, 'w': 28, 'h': 16, 'ocrText': 'KG', 'rawOcrText': 'KG', 'confPts': 82, 'typeOfObject': 'unit'}
+{'codeName': '241', 'x': 783, 'y': 555, 'w': 49, 'h': 17, 'ocrText': '22,56', 'rawOcrText': '22,56', 'confPts': 71, 'typeOfObject': 'decimal number'}
+{'codeName': '242', 'x': 970, 'y': 555, 'w': 49, 'h': 17, 'ocrText': '2,50', 'rawOcrText': '2,50', 'confPts': 43, 'typeOfObject': 'decimal number'}
+{'codeName': '243', 'x': 1041, 'y': 555, 'w': 9, 'h': 16, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 86, 'typeOfObject': 'integer number'}
+{'codeName': '244', 'x': 1157, 'y': 555, 'w': 49, 'h': 17, 'ocrText': '22,50', 'rawOcrText': '22,50', 'confPts': 72, 'typeOfObject': 'decimal number'}
+{'codeName': '245', 'x': 1281, 'y': 555, 'w': 49, 'h': 17, 'ocrText': '36,33', 'rawOcrText': '36,33', 'confPts': 74, 'typeOfObject': 'decimal number'}
+{'codeName': '246', 'x': 1343, 'y': 555, 'w': 39, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 86, 'typeOfObject': 'decimal number'}
+{'codeName': '247', 'x': 1471, 'y': 555, 'w': 41, 'h': 17, 'ocrText': '5,75', 'rawOcrText': '5,75', 'confPts': 83, 'typeOfObject': 'decimal number'}
+{'codeName': '248', 'x': 1586, 'y': 555, 'w': 50, 'h': 17, 'ocrText': '2,07', 'rawOcrText': '2,07', 'confPts': 55, 'typeOfObject': 'decimal number'}
+{'codeName': '250', 'x': 122, 'y': 584, 'w': 57, 'h': 16, 'ocrText': '197256', 'rawOcrText': '197256', 'confPts': 76, 'typeOfObject': 'integer number'}
+{'codeName': '251', 'x': 262, 'y': 584, 'w': 48, 'h': 17, 'ocrText': '1,000', 'rawOcrText': '1,000', 'confPts': 72, 'typeOfObject': 'decimal number'}
+{'codeName': '255', 'x': 444, 'y': 584, 'w': 22, 'h': 16, 'ocrText': 'CR', 'rawOcrText': 'CR', 'confPts': 93, 'typeOfObject': 'word'}
+{'codeName': '256', 'x': 474, 'y': 584, 'w': 61, 'h': 16, 'ocrText': 'KARTON', 'rawOcrText': 'KARTON', 'confPts': 72, 'typeOfObject': 'word'}
+{'codeName': '257', 'x': 544, 'y': 584, 'w': 68, 'h': 17, 'ocrText': '18,206', 'rawOcrText': '18,206', 'confPts': 67, 'typeOfObject': 'decimal number'}
+{'codeName': '259', 'x': 773, 'y': 585, 'w': 59, 'h': 17, 'ocrText': '359,08', 'rawOcrText': '359,08', 'confPts': 43, 'typeOfObject': 'decimal number'}
+{'codeName': '260', 'x': 960, 'y': 585, 'w': 59, 'h': 17, 'ocrText': '9,9', 'rawOcrText': '9,9', 'confPts': 22, 'typeOfObject': 'decimal number'}
+{'codeName': '261', 'x': 1041, 'y': 585, 'w': 8, 'h': 16, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 82, 'typeOfObject': 'integer number'}
+{'codeName': '262', 'x': 1147, 'y': 585, 'w': 59, 'h': 16, 'ocrText': '359,98', 'rawOcrText': '359,98', 'confPts': 45, 'typeOfObject': 'decimal number'}
+{'codeName': '263', 'x': 1271, 'y': 585, 'w': 60, 'h': 16, 'ocrText': '359,49', 'rawOcrText': '359,49', 'confPts': 75, 'typeOfObject': 'decimal number'}
+{'codeName': '264', 'x': 1343, 'y': 585, 'w': 39, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 94, 'typeOfObject': 'decimal number'}
+{'codeName': '265', 'x': 1462, 'y': 585, 'w': 50, 'h': 16, 'ocrText': '34,00', 'rawOcrText': '34,00', 'confPts': 49, 'typeOfObject': 'decimal number'}
+{'codeName': '266', 'x': 1576, 'y': 585, 'w': 61, 'h': 16, 'ocrText': '413,99', 'rawOcrText': '413,99', 'confPts': 65, 'typeOfObject': 'decimal number'}
+{'codeName': '268', 'x': 122, 'y': 613, 'w': 57, 'h': 16, 'ocrText': '137622', 'rawOcrText': '137622', 'confPts': 64, 'typeOfObject': 'integer number'}
+{'codeName': '269', 'x': 260, 'y': 614, 'w': 50, 'h': 17, 'ocrText': '3,000', 'rawOcrText': '3,000', 'confPts': 60, 'typeOfObject': 'decimal number'}
+{'codeName': '273', 'x': 466, 'y': 614, 'w': 16, 'h': 16, 'ocrText': 'Z.', 'rawOcrText': 'Z.', 'confPts': 48, 'typeOfObject': 'word'}
+{'codeName': '274', 'x': 495, 'y': 614, 'w': 19, 'h': 16, 'ocrText': 'T', 'rawOcrText': 'T', 'confPts': 45, 'typeOfObject': 'unknown'}
+{'codeName': '275', 'x': 522, 'y': 614, 'w': 61, 'h': 16, 'ocrText': 'KARTON', 'rawOcrText': 'KARTON', 'confPts': 46, 'typeOfObject': 'word'}
+{'codeName': '276', 'x': 591, 'y': 614, 'w': 31, 'h': 16, 'ocrText': 'MG', 'rawOcrText': 'MG', 'confPts': 35, 'typeOfObject': 'unit'}
+{'codeName': '277', 'x': 774, 'y': 615, 'w': 58, 'h': 17, 'ocrText': '367,50', 'rawOcrText': '367,50', 'confPts': 74, 'typeOfObject': 'decimal number'}
+{'codeName': '278', 'x': 960, 'y': 615, 'w': 59, 'h': 16, 'ocrText': '867,58', 'rawOcrText': '867,58', 'confPts': 30, 'typeOfObject': 'decimal number'}
+{'codeName': '279', 'x': 1041, 'y': 615, 'w': 8, 'h': 16, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 74, 'typeOfObject': 'integer number'}
+{'codeName': '280', 'x': 1147, 'y': 615, 'w': 59, 'h': 16, 'ocrText': '367,58', 'rawOcrText': '367,58', 'confPts': 64, 'typeOfObject': 'decimal number'}
+{'codeName': '281', 'x': 1270, 'y': 615, 'w': 60, 'h': 17, 'ocrText': '562,74', 'rawOcrText': '562,74', 'confPts': 70, 'typeOfObject': 'decimal number'}
+{'codeName': '282', 'x': 1343, 'y': 615, 'w': 39, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 95, 'typeOfObject': 'decimal number'}
+{'codeName': '283', 'x': 1463, 'y': 615, 'w': 48, 'h': 17, 'ocrText': '75,42', 'rawOcrText': '75,42', 'confPts': 42, 'typeOfObject': 'decimal number'}
+{'codeName': '284', 'x': 1576, 'y': 615, 'w': 60, 'h': 16, 'ocrText': '576,15', 'rawOcrText': '576,15', 'confPts': 67, 'typeOfObject': 'decimal number'}
+{'codeName': '286', 'x': 120, 'y': 643, 'w': 59, 'h': 16, 'ocrText': '208075', 'rawOcrText': '208075', 'confPts': 57, 'typeOfObject': 'integer number'}
+{'codeName': '287', 'x': 262, 'y': 643, 'w': 48, 'h': 16, 'ocrText': '1,000', 'rawOcrText': '1,000', 'confPts': 76, 'typeOfObject': 'decimal number'}
+{'codeName': '289', 'x': 337, 'y': 643, 'w': 51, 'h': 16, 'ocrText': 'CELER', 'rawOcrText': 'CELER', 'confPts': 54, 'typeOfObject': 'word'}
+{'codeName': '290', 'x': 396, 'y': 643, 'w': 47, 'h': 16, 'ocrText': 'BILY.', 'rawOcrText': 'BILY.', 'confPts': 43, 'typeOfObject': 'word'}
+{'codeName': '291', 'x': 455, 'y': 643, 'w': 50, 'h': 16, 'ocrText': 'PRAMÝ', 'rawOcrText': 'PRAMÝ', 'confPts': 27, 'typeOfObject': 'unknown'}
+{'codeName': '292', 'x': 513, 'y': 643, 'w': 31, 'h': 16, 'ocrText': '4/5', 'rawOcrText': '4/5', 'confPts': 91, 'typeOfObject': 'integer number'}
+{'codeName': '293', 'x': 552, 'y': 644, 'w': 20, 'h': 15, 'ocrText': 'ML', 'rawOcrText': 'ML', 'confPts': 89, 'typeOfObject': 'word'}
+{'codeName': '294', 'x': 581, 'y': 643, 'w': 31, 'h': 16, 'ocrText': 'SK', 'rawOcrText': 'SK', 'confPts': 30, 'typeOfObject': 'word'}
+{'codeName': '295', 'x': 774, 'y': 644, 'w': 67, 'h': 22, 'ocrText': 'PM', 'rawOcrText': 'PM', 'confPts': 35, 'typeOfObject': 'unknown'}
+{'codeName': '296', 'x': 961, 'y': 644, 'w': 58, 'h': 17, 'ocrText': '104,48', 'rawOcrText': '104,48', 'confPts': 59, 'typeOfObject': 'decimal number'}
+{'codeName': '297', 'x': 1040, 'y': 644, 'w': 8, 'h': 16, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 38, 'typeOfObject': 'word'}
+{'codeName': '298', 'x': 1148, 'y': 644, 'w': 35, 'h': 17, 'ocrText': 'č,', 'rawOcrText': 'č,', 'confPts': 9, 'typeOfObject': 'unit'}
+{'codeName': '299', 'x': 1185, 'y': 644, 'w': 21, 'h': 16, 'ocrText': '4', 'rawOcrText': '4', 'confPts': 40, 'typeOfObject': 'integer number'}
+{'codeName': '300', 'x': 1272, 'y': 644, 'w': 58, 'h': 16, 'ocrText': '364,40', 'rawOcrText': '364,40', 'confPts': 33, 'typeOfObject': 'decimal number'}
+{'codeName': '301', 'x': 1343, 'y': 644, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 78, 'typeOfObject': 'decimal number'}
+{'codeName': '302', 'x': 1463, 'y': 644, 'w': 48, 'h': 17, 'ocrText': '35,67', 'rawOcrText': '35,67', 'confPts': 83, 'typeOfObject': 'decimal number'}
+{'codeName': '303', 'x': 1578, 'y': 644, 'w': 58, 'h': 16, 'ocrText': '120,15', 'rawOcrText': '120,15', 'confPts': 69, 'typeOfObject': 'decimal number'}
+{'codeName': '305', 'x': 122, 'y': 672, 'w': 56, 'h': 16, 'ocrText': '134224', 'rawOcrText': '134224', 'confPts': 54, 'typeOfObject': 'integer number'}
+{'codeName': '306', 'x': 260, 'y': 673, 'w': 50, 'h': 16, 'ocrText': '4,000', 'rawOcrText': '4,000', 'confPts': 63, 'typeOfObject': 'decimal number'}
+{'codeName': '309', 'x': 416, 'y': 669, 'w': 89, 'h': 20, 'ocrText': 'LAKŮDKOVÁ', 'rawOcrText': 'LAKŮDKOVÁ', 'confPts': 37, 'typeOfObject': 'unknown'}
+{'codeName': '310', 'x': 513, 'y': 673, 'w': 60, 'h': 16, 'ocrText': 'SVAZEK', 'rawOcrText': 'SVAZEK', 'confPts': 26, 'typeOfObject': 'word'}
+{'codeName': '311', 'x': 581, 'y': 673, 'w': 21, 'h': 16, 'ocrText': 'CZ', 'rawOcrText': 'CZ', 'confPts': 92, 'typeOfObject': 'word'}
+{'codeName': '312', 'x': 610, 'y': 673, 'w': 22, 'h': 16, 'ocrText': 'KS', 'rawOcrText': 'KS', 'confPts': 85, 'typeOfObject': 'unit'}
+{'codeName': '314', 'x': 784, 'y': 669, 'w': 57, 'h': 21, 'ocrText': '23,55', 'rawOcrText': '23,55', 'confPts': 59, 'typeOfObject': 'decimal number'}
+{'codeName': '315', 'x': 971, 'y': 674, 'w': 48, 'h': 17, 'ocrText': '13,55', 'rawOcrText': '13,55', 'confPts': 62, 'typeOfObject': 'decimal number'}
+{'codeName': '316', 'x': 1041, 'y': 674, 'w': 8, 'h': 15, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 62, 'typeOfObject': 'integer number'}
+{'codeName': '317', 'x': 1158, 'y': 674, 'w': 48, 'h': 16, 'ocrText': '33,55', 'rawOcrText': '33,55', 'confPts': 81, 'typeOfObject': 'decimal number'}
+{'codeName': '318', 'x': 1280, 'y': 674, 'w': 50, 'h': 16, 'ocrText': '54,20', 'rawOcrText': '54,20', 'confPts': 82, 'typeOfObject': 'decimal number'}
+{'codeName': '319', 'x': 1344, 'y': 674, 'w': 38, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 93, 'typeOfObject': 'decimal number'}
+{'codeName': '320', 'x': 1471, 'y': 674, 'w': 41, 'h': 16, 'ocrText': '6,13', 'rawOcrText': '6,13', 'confPts': 60, 'typeOfObject': 'decimal number'}
+{'codeName': '321', 'x': 1586, 'y': 674, 'w': 50, 'h': 16, 'ocrText': '62,3', 'rawOcrText': '62,3', 'confPts': 75, 'typeOfObject': 'decimal number'}
+{'codeName': '324', 'x': 261, 'y': 702, 'w': 49, 'h': 17, 'ocrText': '2,000', 'rawOcrText': '2,000', 'confPts': 77, 'typeOfObject': 'decimal number'}
+{'codeName': '326', 'x': 337, 'y': 703, 'w': 39, 'h': 15, 'ocrText': 'KMZ', 'rawOcrText': 'KMZ', 'confPts': 17, 'typeOfObject': 'unknown'}
+{'codeName': '327', 'x': 386, 'y': 700, 'w': 31, 'h': 19, 'ocrText': 'KOŠ', 'rawOcrText': 'KOŠ', 'confPts': 69, 'typeOfObject': 'word'}
+{'codeName': '328', 'x': 425, 'y': 703, 'w': 20, 'h': 16, 'ocrText': 'CL', 'rawOcrText': 'CL', 'confPts': 87, 'typeOfObject': 'word'}
+{'codeName': '329', 'x': 456, 'y': 703, 'w': 16, 'h': 15, 'ocrText': 'Z.', 'rawOcrText': 'Z.', 'confPts': 59, 'typeOfObject': 'word'}
+{'codeName': '330', 'x': 484, 'y': 703, 'w': 41, 'h': 16, 'ocrText': '5006', 'rawOcrText': '5006', 'confPts': 68, 'typeOfObject': 'integer number'}
+{'codeName': '331', 'x': 782, 'y': 703, 'w': 50, 'h': 17, 'ocrText': '52,40', 'rawOcrText': '52,40', 'confPts': 75, 'typeOfObject': 'decimal number'}
+{'codeName': '332', 'x': 969, 'y': 703, 'w': 50, 'h': 17, 'ocrText': '52,40', 'rawOcrText': '52,40', 'confPts': 55, 'typeOfObject': 'decimal number'}
+{'codeName': '333', 'x': 1041, 'y': 704, 'w': 8, 'h': 15, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 73, 'typeOfObject': 'word'}
+{'codeName': '334', 'x': 1156, 'y': 703, 'w': 50, 'h': 17, 'ocrText': '52,40', 'rawOcrText': '52,40', 'confPts': 73, 'typeOfObject': 'decimal number'}
+{'codeName': '335', 'x': 1273, 'y': 703, 'w': 57, 'h': 17, 'ocrText': '304,00', 'rawOcrText': '304,00', 'confPts': 71, 'typeOfObject': 'decimal number'}
+{'codeName': '336', 'x': 1344, 'y': 704, 'w': 38, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 84, 'typeOfObject': 'decimal number'}
+{'codeName': '337', 'x': 1464, 'y': 703, 'w': 48, 'h': 18, 'ocrText': '35,72', 'rawOcrText': '35,72', 'confPts': 77, 'typeOfObject': 'decimal number'}
+{'codeName': '338', 'x': 1579, 'y': 703, 'w': 57, 'h': 17, 'ocrText': '120,52', 'rawOcrText': '120,52', 'confPts': 70, 'typeOfObject': 'decimal number'}
+{'codeName': '340', 'x': 122, 'y': 732, 'w': 57, 'h': 16, 'ocrText': '11086', 'rawOcrText': '11086', 'confPts': 33, 'typeOfObject': 'integer number'}
+{'codeName': '341', 'x': 261, 'y': 732, 'w': 49, 'h': 17, 'ocrText': '3,000', 'rawOcrText': '3,000', 'confPts': 50, 'typeOfObject': 'decimal number'}
+{'codeName': '343', 'x': 376, 'y': 733, 'w': 50, 'h': 15, 'ocrText': 'MLETÝ', 'rawOcrText': 'MLETÝ', 'confPts': 80, 'typeOfObject': 'word'}
+{'codeName': '344', 'x': 434, 'y': 733, 'w': 80, 'h': 16, 'ocrText': 'OCHUCENÝ', 'rawOcrText': 'OCHUCENÝ', 'confPts': 48, 'typeOfObject': 'word'}
+{'codeName': '345', 'x': 524, 'y': 733, 'w': 30, 'h': 15, 'ocrText': '70%', 'rawOcrText': '70%', 'confPts': 72, 'typeOfObject': 'integer number'}
+{'codeName': '346', 'x': 561, 'y': 733, 'w': 21, 'h': 16, 'ocrText': 'CZ', 'rawOcrText': 'CZ', 'confPts': 93, 'typeOfObject': 'word'}
+{'codeName': '347', 'x': 592, 'y': 733, 'w': 30, 'h': 16, 'ocrText': '346', 'rawOcrText': '346', 'confPts': 53, 'typeOfObject': 'integer number'}
+{'codeName': '348', 'x': 773, 'y': 733, 'w': 59, 'h': 16, 'ocrText': '231,00', 'rawOcrText': '231,00', 'confPts': 84, 'typeOfObject': 'decimal number'}
+{'codeName': '349', 'x': 959, 'y': 733, 'w': 60, 'h': 17, 'ocrText': '23,00', 'rawOcrText': '23,00', 'confPts': 72, 'typeOfObject': 'decimal number'}
+{'codeName': '350', 'x': 1041, 'y': 734, 'w': 7, 'h': 15, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 66, 'typeOfObject': 'word'}
+{'codeName': '351', 'x': 1146, 'y': 733, 'w': 60, 'h': 17, 'ocrText': '231,00', 'rawOcrText': '231,00', 'confPts': 67, 'typeOfObject': 'decimal number'}
+{'codeName': '352', 'x': 1270, 'y': 733, 'w': 60, 'h': 17, 'ocrText': '653,00', 'rawOcrText': '653,00', 'confPts': 76, 'typeOfObject': 'decimal number'}
+{'codeName': '353', 'x': 1344, 'y': 733, 'w': 38, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 95, 'typeOfObject': 'decimal number'}
+{'codeName': '354', 'x': 1454, 'y': 733, 'w': 58, 'h': 17, 'ocrText': '103,95', 'rawOcrText': '103,95', 'confPts': 75, 'typeOfObject': 'decimal number'}
+{'codeName': '355', 'x': 1578, 'y': 733, 'w': 58, 'h': 18, 'ocrText': '706,95', 'rawOcrText': '706,95', 'confPts': 45, 'typeOfObject': 'decimal number'}
+{'codeName': '357', 'x': 121, 'y': 761, 'w': 59, 'h': 16, 'ocrText': 'č', 'rawOcrText': 'č', 'confPts': 7, 'typeOfObject': 'unknown'}
+{'codeName': '358', 'x': 260, 'y': 762, 'w': 50, 'h': 17, 'ocrText': '2,800', 'rawOcrText': '2,800', 'confPts': 47, 'typeOfObject': 'decimal number'}
+{'codeName': '360', 'x': 337, 'y': 762, 'w': 20, 'h': 16, 'ocrText': 'MC', 'rawOcrText': 'MC', 'confPts': 63, 'typeOfObject': 'unknown'}
+{'codeName': '361', 'x': 367, 'y': 759, 'w': 70, 'h': 19, 'ocrText': 'PAŽEMCA', 'rawOcrText': 'PAŽEMCA', 'confPts': 38, 'typeOfObject': 'unknown'}
+{'codeName': '363', 'x': 542, 'y': 762, 'w': 21, 'h': 16, 'ocrText': 'CZ', 'rawOcrText': 'CZ', 'confPts': 84, 'typeOfObject': 'word'}
+{'codeName': '365', 'x': 782, 'y': 763, 'w': 50, 'h': 17, 'ocrText': '47,15', 'rawOcrText': '47,15', 'confPts': 65, 'typeOfObject': 'decimal number'}
+{'codeName': '366', 'x': 969, 'y': 763, 'w': 50, 'h': 16, 'ocrText': '47,5', 'rawOcrText': '47,5', 'confPts': 66, 'typeOfObject': 'decimal number'}
+{'codeName': '367', 'x': 1042, 'y': 763, 'w': 7, 'h': 15, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 46, 'typeOfObject': 'integer number'}
+{'codeName': '368', 'x': 1155, 'y': 763, 'w': 51, 'h': 17, 'ocrText': '47,15', 'rawOcrText': '47,15', 'confPts': 78, 'typeOfObject': 'decimal number'}
+{'codeName': '369', 'x': 1272, 'y': 763, 'w': 59, 'h': 17, 'ocrText': '280,60', 'rawOcrText': '280,60', 'confPts': 68, 'typeOfObject': 'decimal number'}
+{'codeName': '370', 'x': 1343, 'y': 763, 'w': 39, 'h': 17, 'ocrText': '35,0', 'rawOcrText': '35,0', 'confPts': 85, 'typeOfObject': 'decimal number'}
+{'codeName': '371', 'x': 1462, 'y': 763, 'w': 50, 'h': 17, 'ocrText': '20,29', 'rawOcrText': '20,29', 'confPts': 61, 'typeOfObject': 'decimal number'}
+{'codeName': '372', 'x': 1577, 'y': 763, 'w': 60, 'h': 17, 'ocrText': '206,19', 'rawOcrText': '206,19', 'confPts': 53, 'typeOfObject': 'decimal number'}
+{'codeName': '374', 'x': 121, 'y': 791, 'w': 57, 'h': 16, 'ocrText': '6767', 'rawOcrText': '6767', 'confPts': 31, 'typeOfObject': 'integer number'}
+{'codeName': '375', 'x': 261, 'y': 791, 'w': 49, 'h': 18, 'ocrText': '3,000', 'rawOcrText': '3,000', 'confPts': 46, 'typeOfObject': 'decimal number'}
+{'codeName': '377', 'x': 337, 'y': 791, 'w': 20, 'h': 17, 'ocrText': 'MC', 'rawOcrText': 'MC', 'confPts': 71, 'typeOfObject': 'unknown'}
+{'codeName': '378', 'x': 367, 'y': 792, 'w': 49, 'h': 16, 'ocrText': 'SALÁT', 'rawOcrText': 'SALÁT', 'confPts': 62, 'typeOfObject': 'word'}
+{'codeName': '379', 'x': 425, 'y': 792, 'w': 51, 'h': 16, 'ocrText': 'LOLLO', 'rawOcrText': 'LOLLO', 'confPts': 17, 'typeOfObject': 'unknown'}
+{'codeName': '381', 'x': 554, 'y': 792, 'w': 16, 'h': 15, 'ocrText': 'Z.', 'rawOcrText': 'Z.', 'confPts': 18, 'typeOfObject': 'word'}
+{'codeName': '382', 'x': 581, 'y': 792, 'w': 21, 'h': 16, 'ocrText': 'CZ', 'rawOcrText': 'CZ', 'confPts': 94, 'typeOfObject': 'word'}
+{'codeName': '383', 'x': 610, 'y': 792, 'w': 22, 'h': 16, 'ocrText': 'KS', 'rawOcrText': 'KS', 'confPts': 81, 'typeOfObject': 'unit'}
+{'codeName': '384', 'x': 781, 'y': 792, 'w': 50, 'h': 16, 'ocrText': 'činí', 'rawOcrText': 'činí', 'confPts': 19, 'typeOfObject': 'word'}
+{'codeName': '385', 'x': 969, 'y': 793, 'w': 50, 'h': 16, 'ocrText': '20,70', 'rawOcrText': '20,70', 'confPts': 90, 'typeOfObject': 'decimal number'}
+{'codeName': '386', 'x': 1042, 'y': 793, 'w': 7, 'h': 15, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 66, 'typeOfObject': 'integer number'}
+{'codeName': '387', 'x': 1156, 'y': 793, 'w': 50, 'h': 17, 'ocrText': '20,70', 'rawOcrText': '20,70', 'confPts': 67, 'typeOfObject': 'decimal number'}
+{'codeName': '389', 'x': 1344, 'y': 793, 'w': 38, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 95, 'typeOfObject': 'decimal number'}
+{'codeName': '390', 'x': 1471, 'y': 793, 'w': 41, 'h': 17, 'ocrText': '9,2', 'rawOcrText': '9,2', 'confPts': 31, 'typeOfObject': 'decimal number'}
+{'codeName': '391', 'x': 1587, 'y': 792, 'w': 49, 'h': 17, 'ocrText': '71,42', 'rawOcrText': '71,42', 'confPts': 61, 'typeOfObject': 'decimal number'}
+{'codeName': '393', 'x': 120, 'y': 821, 'w': 59, 'h': 16, 'ocrText': '67623', 'rawOcrText': '67623', 'confPts': 17, 'typeOfObject': 'integer number'}
+{'codeName': '394', 'x': 261, 'y': 821, 'w': 49, 'h': 17, 'ocrText': '3,000', 'rawOcrText': '3,000', 'confPts': 52, 'typeOfObject': 'decimal number'}
+{'codeName': '396', 'x': 337, 'y': 822, 'w': 20, 'h': 16, 'ocrText': 'MC', 'rawOcrText': 'MC', 'confPts': 73, 'typeOfObject': 'unknown'}
+{'codeName': '397', 'x': 367, 'y': 822, 'w': 49, 'h': 16, 'ocrText': 'SALÁT', 'rawOcrText': 'SALÁT', 'confPts': 48, 'typeOfObject': 'word'}
+{'codeName': '398', 'x': 425, 'y': 822, 'w': 51, 'h': 16, 'ocrText': 'LOLLO', 'rawOcrText': 'LOLLO', 'confPts': 86, 'typeOfObject': 'unknown'}
+{'codeName': '399', 'x': 483, 'y': 822, 'w': 52, 'h': 16, 'ocrText': 'AGBBO', 'rawOcrText': 'AGBBO', 'confPts': 9, 'typeOfObject': 'unknown'}
+{'codeName': '400', 'x': 544, 'y': 822, 'w': 13, 'h': 16, 'ocrText': 'T.', 'rawOcrText': 'T.', 'confPts': 31, 'typeOfObject': 'unknown'}
+{'codeName': '401', 'x': 571, 'y': 822, 'w': 22, 'h': 16, 'ocrText': 'CZ', 'rawOcrText': 'CZ', 'confPts': 92, 'typeOfObject': 'word'}
+{'codeName': '402', 'x': 601, 'y': 822, 'w': 21, 'h': 16, 'ocrText': 'KS', 'rawOcrText': 'KS', 'confPts': 77, 'typeOfObject': 'unit'}
+{'codeName': '403', 'x': 781, 'y': 821, 'w': 50, 'h': 17, 'ocrText': 'ční', 'rawOcrText': 'ční', 'confPts': 32, 'typeOfObject': 'word'}
+{'codeName': '404', 'x': 969, 'y': 822, 'w': 50, 'h': 17, 'ocrText': '20,70', 'rawOcrText': '20,70', 'confPts': 81, 'typeOfObject': 'decimal number'}
+{'codeName': '405', 'x': 1041, 'y': 823, 'w': 8, 'h': 15, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 75, 'typeOfObject': 'integer number'}
+{'codeName': '406', 'x': 1156, 'y': 822, 'w': 50, 'h': 17, 'ocrText': '20,76', 'rawOcrText': '20,76', 'confPts': 55, 'typeOfObject': 'decimal number'}
+{'codeName': '407', 'x': 1280, 'y': 822, 'w': 51, 'h': 17, 'ocrText': '62,10', 'rawOcrText': '62,10', 'confPts': 78, 'typeOfObject': 'decimal number'}
+{'codeName': '408', 'x': 1344, 'y': 822, 'w': 38, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 96, 'typeOfObject': 'decimal number'}
+{'codeName': '409', 'x': 1471, 'y': 822, 'w': 41, 'h': 17, 'ocrText': '9,22', 'rawOcrText': '9,22', 'confPts': 62, 'typeOfObject': 'decimal number'}
+{'codeName': '410', 'x': 1588, 'y': 822, 'w': 48, 'h': 17, 'ocrText': '7,42', 'rawOcrText': '7,42', 'confPts': 24, 'typeOfObject': 'decimal number'}
+{'codeName': '412', 'x': 121, 'y': 851, 'w': 58, 'h': 16, 'ocrText': '2352', 'rawOcrText': '2352', 'confPts': 39, 'typeOfObject': 'integer number'}
+{'codeName': '413', 'x': 262, 'y': 851, 'w': 48, 'h': 17, 'ocrText': '1,000', 'rawOcrText': '1,000', 'confPts': 39, 'typeOfObject': 'decimal number'}
+{'codeName': '414', 'x': 337, 'y': 851, 'w': 51, 'h': 17, 'ocrText': 'MAKEW', 'rawOcrText': 'MAKEW', 'confPts': 20, 'typeOfObject': 'unknown'}
+{'codeName': '415', 'x': 396, 'y': 852, 'w': 70, 'h': 15, 'ocrText': 'KAROTKA', 'rawOcrText': 'KAROTKA', 'confPts': 75, 'typeOfObject': 'word'}
+{'codeName': '416', 'x': 474, 'y': 852, 'w': 41, 'h': 15, 'ocrText': 'NOVÁ', 'rawOcrText': 'NOVÁ', 'confPts': 35, 'typeOfObject': 'word'}
+{'codeName': '417', 'x': 525, 'y': 852, 'w': 19, 'h': 16, 'ocrText': 'ET', 'rawOcrText': 'ET', 'confPts': 37, 'typeOfObject': 'unknown'}
+{'codeName': '418', 'x': 552, 'y': 852, 'w': 31, 'h': 15, 'ocrText': 'SME', 'rawOcrText': 'SME', 'confPts': 8, 'typeOfObject': 'unknown'}
+{'codeName': '419', 'x': 782, 'y': 852, 'w': 50, 'h': 17, 'ocrText': '06,73', 'rawOcrText': '06,73', 'confPts': 65, 'typeOfObject': 'decimal number'}
+{'codeName': '420', 'x': 969, 'y': 852, 'w': 49, 'h': 17, 'ocrText': '0,73', 'rawOcrText': '0,73', 'confPts': 62, 'typeOfObject': 'decimal number'}
+{'codeName': '421', 'x': 1042, 'y': 852, 'w': 7, 'h': 16, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 81, 'typeOfObject': 'word'}
+{'codeName': '423', 'x': 1280, 'y': 852, 'w': 50, 'h': 17, 'ocrText': '0,73', 'rawOcrText': '0,73', 'confPts': 31, 'typeOfObject': 'decimal number'}
+{'codeName': '424', 'x': 1344, 'y': 852, 'w': 38, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 93, 'typeOfObject': 'decimal number'}
+{'codeName': '425', 'x': 1464, 'y': 852, 'w': 47, 'h': 17, 'ocrText': '3,', 'rawOcrText': '3,', 'confPts': 40, 'typeOfObject': 'integer number'}
+{'codeName': '426', 'x': 1579, 'y': 852, 'w': 57, 'h': 17, 'ocrText': '162,04', 'rawOcrText': '162,04', 'confPts': 36, 'typeOfObject': 'decimal number'}
+{'codeName': '428', 'x': 122, 'y': 880, 'w': 58, 'h': 16, 'ocrText': '16639', 'rawOcrText': '16639', 'confPts': 58, 'typeOfObject': 'integer number'}
+{'codeName': '429', 'x': 260, 'y': 881, 'w': 50, 'h': 17, 'ocrText': '4,000', 'rawOcrText': '4,000', 'confPts': 40, 'typeOfObject': 'decimal number'}
+{'codeName': '430', 'x': 337, 'y': 881, 'w': 99, 'h': 16, 'ocrText': 'MEICTARENKY', 'rawOcrText': 'MEICTARENKY', 'confPts': 17, 'typeOfObject': 'unknown'}
+{'codeName': '431', 'x': 445, 'y': 878, 'w': 24, 'h': 19, 'ocrText': 'ŽL.', 'rawOcrText': 'ŽL.', 'confPts': 51, 'typeOfObject': 'unknown'}
+{'codeName': '432', 'x': 486, 'y': 881, 'w': 16, 'h': 16, 'ocrText': 'E.', 'rawOcrText': 'E.', 'confPts': 26, 'typeOfObject': 'unknown'}
+{'codeName': '433', 'x': 513, 'y': 881, 'w': 12, 'h': 16, 'ocrText': 'B', 'rawOcrText': 'B', 'confPts': 77, 'typeOfObject': 'unknown'}
+{'codeName': '434', 'x': 532, 'y': 881, 'w': 59, 'h': 16, 'ocrText': 'KARET', 'rawOcrText': 'KARET', 'confPts': 38, 'typeOfObject': 'word'}
+{'codeName': '435', 'x': 601, 'y': 881, 'w': 31, 'h': 16, 'ocrText': 'M6', 'rawOcrText': 'M6', 'confPts': 40, 'typeOfObject': 'unknown'}
+{'codeName': '436', 'x': 774, 'y': 881, 'w': 36, 'h': 17, 'ocrText': 'dě,', 'rawOcrText': 'dě,', 'confPts': 26, 'typeOfObject': 'unknown'}
+{'codeName': '437', 'x': 811, 'y': 882, 'w': 21, 'h': 15, 'ocrText': '010', 'rawOcrText': '010', 'confPts': 45, 'typeOfObject': 'integer number'}
+{'codeName': '439', 'x': 1041, 'y': 882, 'w': 8, 'h': 15, 'ocrText': '3', 'rawOcrText': '3', 'confPts': 42, 'typeOfObject': 'integer number'}
+{'codeName': '440', 'x': 1148, 'y': 882, 'w': 58, 'h': 16, 'ocrText': '60,00', 'rawOcrText': '60,00', 'confPts': 23, 'typeOfObject': 'decimal number'}
+{'codeName': '441', 'x': 1270, 'y': 881, 'w': 61, 'h': 17, 'ocrText': '672,00', 'rawOcrText': '672,00', 'confPts': 64, 'typeOfObject': 'decimal number'}
+{'codeName': '442', 'x': 1344, 'y': 881, 'w': 38, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 95, 'typeOfObject': 'decimal number'}
+{'codeName': '444', 'x': 1577, 'y': 881, 'w': 60, 'h': 17, 'ocrText': '772,20', 'rawOcrText': '772,20', 'confPts': 61, 'typeOfObject': 'decimal number'}
+{'codeName': '446', 'x': 121, 'y': 910, 'w': 59, 'h': 16, 'ocrText': 'zime', 'rawOcrText': 'zime', 'confPts': 38, 'typeOfObject': 'unknown'}
+{'codeName': '447', 'x': 262, 'y': 911, 'w': 48, 'h': 16, 'ocrText': '1,080', 'rawOcrText': '1,080', 'confPts': 35, 'typeOfObject': 'decimal number'}
+{'codeName': '448', 'x': 337, 'y': 911, 'w': 60, 'h': 16, 'ocrText': 'OMURICY', 'rawOcrText': 'OMURICY', 'confPts': 26, 'typeOfObject': 'unknown'}
+{'codeName': '450', 'x': 485, 'y': 911, 'w': 38, 'h': 16, 'ocrText': '250', 'rawOcrText': '250', 'confPts': 71, 'typeOfObject': 'integer number'}
+{'codeName': '451', 'x': 533, 'y': 911, 'w': 21, 'h': 16, 'ocrText': 'ES', 'rawOcrText': 'ES', 'confPts': 81, 'typeOfObject': 'word'}
+{'codeName': '452', 'x': 562, 'y': 911, 'w': 51, 'h': 17, 'ocrText': '4,546', 'rawOcrText': '4,546', 'confPts': 23, 'typeOfObject': 'decimal number'}
+{'codeName': '454', 'x': 774, 'y': 911, 'w': 58, 'h': 17, 'ocrText': '260,18', 'rawOcrText': '260,18', 'confPts': 55, 'typeOfObject': 'decimal number'}
+{'codeName': '455', 'x': 961, 'y': 911, 'w': 58, 'h': 17, 'ocrText': '360,18', 'rawOcrText': '360,18', 'confPts': 62, 'typeOfObject': 'decimal number'}
+{'codeName': '456', 'x': 1041, 'y': 912, 'w': 8, 'h': 15, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 49, 'typeOfObject': 'integer number'}
+{'codeName': '457', 'x': 1148, 'y': 911, 'w': 58, 'h': 17, 'ocrText': '260,18', 'rawOcrText': '260,18', 'confPts': 39, 'typeOfObject': 'decimal number'}
+{'codeName': '458', 'x': 1273, 'y': 911, 'w': 58, 'h': 17, 'ocrText': '360,18', 'rawOcrText': '360,18', 'confPts': 64, 'typeOfObject': 'decimal number'}
+{'codeName': '459', 'x': 1344, 'y': 911, 'w': 38, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 96, 'typeOfObject': 'decimal number'}
+{'codeName': '460', 'x': 1463, 'y': 911, 'w': 49, 'h': 17, 'ocrText': '2,03', 'rawOcrText': '2,03', 'confPts': 83, 'typeOfObject': 'decimal number'}
+{'codeName': '461', 'x': 1579, 'y': 911, 'w': 56, 'h': 17, 'ocrText': '204,23', 'rawOcrText': '204,23', 'confPts': 55, 'typeOfObject': 'decimal number'}
+{'codeName': '465', 'x': 260, 'y': 941, 'w': 50, 'h': 16, 'ocrText': '4,080', 'rawOcrText': '4,080', 'confPts': 43, 'typeOfObject': 'decimal number'}
+{'codeName': '466', 'x': 338, 'y': 941, 'w': 70, 'h': 16, 'ocrText': 'PAPRIKA', 'rawOcrText': 'PAPRIKA', 'confPts': 14, 'typeOfObject': 'word'}
+{'codeName': '467', 'x': 416, 'y': 941, 'w': 37, 'h': 16, 'ocrText': 'ZEL.', 'rawOcrText': 'ZEL.', 'confPts': 12, 'typeOfObject': 'word'}
+{'codeName': '469', 'x': 543, 'y': 941, 'w': 20, 'h': 16, 'ocrText': 'ES', 'rawOcrText': 'ES', 'confPts': 88, 'typeOfObject': 'word'}
+{'codeName': '470', 'x': 572, 'y': 941, 'w': 41, 'h': 16, 'ocrText': 'ZANE', 'rawOcrText': 'ZANE', 'confPts': 30, 'typeOfObject': 'word'}
+{'codeName': '471', 'x': 783, 'y': 941, 'w': 50, 'h': 17, 'ocrText': '77,20', 'rawOcrText': '77,20', 'confPts': 69, 'typeOfObject': 'decimal number'}
+{'codeName': '472', 'x': 970, 'y': 941, 'w': 49, 'h': 17, 'ocrText': '7,20', 'rawOcrText': '7,20', 'confPts': 71, 'typeOfObject': 'decimal number'}
+{'codeName': '473', 'x': 1041, 'y': 941, 'w': 8, 'h': 16, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 81, 'typeOfObject': 'word'}
+{'codeName': '474', 'x': 1156, 'y': 941, 'w': 50, 'h': 17, 'ocrText': '27,20', 'rawOcrText': '27,20', 'confPts': 93, 'typeOfObject': 'decimal number'}
+{'codeName': '475', 'x': 1273, 'y': 941, 'w': 58, 'h': 17, 'ocrText': '306,00', 'rawOcrText': '306,00', 'confPts': 48, 'typeOfObject': 'decimal number'}
+{'codeName': '476', 'x': 1343, 'y': 941, 'w': 39, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 84, 'typeOfObject': 'decimal number'}
+{'codeName': '477', 'x': 1464, 'y': 941, 'w': 48, 'h': 17, 'ocrText': '36,32', 'rawOcrText': '36,32', 'confPts': 75, 'typeOfObject': 'decimal number'}
+{'codeName': '478', 'x': 1579, 'y': 941, 'w': 57, 'h': 16, 'ocrText': '125,12', 'rawOcrText': '125,12', 'confPts': 89, 'typeOfObject': 'decimal number'}
+{'codeName': '480', 'x': 338, 'y': 970, 'w': 40, 'h': 17, 'ocrText': 'čem', 'rawOcrText': 'čem', 'confPts': 14, 'typeOfObject': 'word'}
+{'codeName': '483', 'x': 464, 'y': 968, 'w': 90, 'h': 20, 'ocrText': 'Španělsko', 'rawOcrText': 'Španělsko', 'confPts': 12, 'typeOfObject': 'word'}
+{'codeName': '485', 'x': 120, 'y': 999, 'w': 59, 'h': 16, 'ocrText': '23897', 'rawOcrText': '23897', 'confPts': 31, 'typeOfObject': 'integer number'}
+{'codeName': '486', 'x': 262, 'y': 1000, 'w': 48, 'h': 16, 'ocrText': '1,000', 'rawOcrText': '1,000', 'confPts': 70, 'typeOfObject': 'decimal number'}
+{'codeName': '488', 'x': 338, 'y': 997, 'w': 69, 'h': 19, 'ocrText': 'PETRŽEL', 'rawOcrText': 'PETRŽEL', 'confPts': 81, 'typeOfObject': 'word'}
+{'codeName': '489', 'x': 415, 'y': 997, 'w': 81, 'h': 18, 'ocrText': 'KADEŘAVÁ', 'rawOcrText': 'KADEŘAVÁ', 'confPts': 38, 'typeOfObject': 'word'}
+{'codeName': '490', 'x': 504, 'y': 1000, 'w': 47, 'h': 15, 'ocrText': 'FLOM.', 'rawOcrText': 'FLOM.', 'confPts': 74, 'typeOfObject': 'unknown'}
+{'codeName': '491', 'x': 561, 'y': 1000, 'w': 22, 'h': 16, 'ocrText': 'CZ', 'rawOcrText': 'CZ', 'confPts': 89, 'typeOfObject': 'word'}
+{'codeName': '492', 'x': 591, 'y': 1000, 'w': 41, 'h': 19, 'ocrText': '4ěy', 'rawOcrText': '4ěy', 'confPts': 9, 'typeOfObject': 'integer number'}
+{'codeName': '494', 'x': 782, 'y': 1000, 'w': 51, 'h': 17, 'ocrText': '41,0', 'rawOcrText': '41,0', 'confPts': 57, 'typeOfObject': 'decimal number'}
+{'codeName': '495', 'x': 969, 'y': 1000, 'w': 50, 'h': 17, 'ocrText': '41,0', 'rawOcrText': '41,0', 'confPts': 67, 'typeOfObject': 'decimal number'}
+{'codeName': '496', 'x': 1042, 'y': 1000, 'w': 7, 'h': 16, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 66, 'typeOfObject': 'integer number'}
+{'codeName': '497', 'x': 1156, 'y': 1000, 'w': 50, 'h': 17, 'ocrText': '41,0', 'rawOcrText': '41,0', 'confPts': 71, 'typeOfObject': 'decimal number'}
+{'codeName': '498', 'x': 1280, 'y': 1000, 'w': 51, 'h': 17, 'ocrText': '41,90', 'rawOcrText': '41,90', 'confPts': 37, 'typeOfObject': 'decimal number'}
+{'codeName': '499', 'x': 1344, 'y': 1000, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 78, 'typeOfObject': 'decimal number'}
+{'codeName': '500', 'x': 1471, 'y': 1000, 'w': 41, 'h': 17, 'ocrText': '6,28', 'rawOcrText': '6,28', 'confPts': 49, 'typeOfObject': 'decimal number'}
+{'codeName': '501', 'x': 1587, 'y': 1000, 'w': 50, 'h': 17, 'ocrText': '0,19', 'rawOcrText': '0,19', 'confPts': 54, 'typeOfObject': 'decimal number'}
+{'codeName': '503', 'x': 122, 'y': 1029, 'w': 58, 'h': 16, 'ocrText': '13869', 'rawOcrText': '13869', 'confPts': 55, 'typeOfObject': 'integer number'}
+{'codeName': '504', 'x': 262, 'y': 1029, 'w': 48, 'h': 17, 'ocrText': '2,000', 'rawOcrText': '2,000', 'confPts': 71, 'typeOfObject': 'decimal number'}
+{'codeName': '506', 'x': 337, 'y': 1027, 'w': 71, 'h': 18, 'ocrText': 'MAIČATA', 'rawOcrText': 'MAIČATA', 'confPts': 18, 'typeOfObject': 'unknown'}
+{'codeName': '507', 'x': 425, 'y': 1027, 'w': 71, 'h': 18, 'ocrText': 'ČERVENÁ', 'rawOcrText': 'ČERVENÁ', 'confPts': 83, 'typeOfObject': 'word'}
+{'codeName': '508', 'x': 504, 'y': 1029, 'w': 47, 'h': 16, 'ocrText': '47:2.', 'rawOcrText': '47:2.', 'confPts': 56, 'typeOfObject': 'integer number'}
+{'codeName': '511', 'x': 775, 'y': 1030, 'w': 57, 'h': 17, 'ocrText': '137,97', 'rawOcrText': '137,97', 'confPts': 94, 'typeOfObject': 'decimal number'}
+{'codeName': '512', 'x': 961, 'y': 1030, 'w': 58, 'h': 17, 'ocrText': '137,97', 'rawOcrText': '137,97', 'confPts': 72, 'typeOfObject': 'decimal number'}
+{'codeName': '513', 'x': 1042, 'y': 1030, 'w': 7, 'h': 15, 'ocrText': '4', 'rawOcrText': '4', 'confPts': 61, 'typeOfObject': 'integer number'}
+{'codeName': '514', 'x': 1148, 'y': 1030, 'w': 58, 'h': 17, 'ocrText': '137,97', 'rawOcrText': '137,97', 'confPts': 83, 'typeOfObject': 'decimal number'}
+{'codeName': '515', 'x': 1273, 'y': 1029, 'w': 57, 'h': 18, 'ocrText': '137,97', 'rawOcrText': '137,97', 'confPts': 86, 'typeOfObject': 'decimal number'}
+{'codeName': '516', 'x': 1344, 'y': 1030, 'w': 39, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 95, 'typeOfObject': 'decimal number'}
+{'codeName': '517', 'x': 1463, 'y': 1030, 'w': 50, 'h': 17, 'ocrText': '20,70', 'rawOcrText': '20,70', 'confPts': 93, 'typeOfObject': 'decimal number'}
+{'codeName': '518', 'x': 1579, 'y': 1029, 'w': 58, 'h': 17, 'ocrText': '356,67', 'rawOcrText': '356,67', 'confPts': 60, 'typeOfObject': 'decimal number'}
+{'codeName': '521', 'x': 260, 'y': 1059, 'w': 51, 'h': 17, 'ocrText': '8,000', 'rawOcrText': '8,000', 'confPts': 50, 'typeOfObject': 'decimal number'}
+{'codeName': '523', 'x': 337, 'y': 1057, 'w': 42, 'h': 18, 'ocrText': 'ŘEPA', 'rawOcrText': 'ŘEPA', 'confPts': 56, 'typeOfObject': 'word'}
+{'codeName': '524', 'x': 386, 'y': 1056, 'w': 71, 'h': 19, 'ocrText': 'ČEMMENÁ', 'rawOcrText': 'ČEMMENÁ', 'confPts': 23, 'typeOfObject': 'unknown'}
+{'codeName': '526', 'x': 514, 'y': 1060, 'w': 40, 'h': 15, 'ocrText': '8-32', 'rawOcrText': '8-32', 'confPts': 64, 'typeOfObject': 'integer number'}
+{'codeName': '527', 'x': 562, 'y': 1060, 'w': 21, 'h': 15, 'ocrText': 'ES', 'rawOcrText': 'ES', 'confPts': 77, 'typeOfObject': 'word'}
+{'codeName': '529', 'x': 783, 'y': 1060, 'w': 50, 'h': 16, 'ocrText': '2,20', 'rawOcrText': '2,20', 'confPts': 75, 'typeOfObject': 'decimal number'}
+{'codeName': '530', 'x': 970, 'y': 1060, 'w': 50, 'h': 17, 'ocrText': '27,20', 'rawOcrText': '27,20', 'confPts': 70, 'typeOfObject': 'decimal number'}
+{'codeName': '531', 'x': 1042, 'y': 1060, 'w': 7, 'h': 16, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 68, 'typeOfObject': 'word'}
+{'codeName': '532', 'x': 1157, 'y': 1060, 'w': 50, 'h': 16, 'ocrText': '2,2', 'rawOcrText': '2,2', 'confPts': 55, 'typeOfObject': 'decimal number'}
+{'codeName': '533', 'x': 1272, 'y': 1060, 'w': 59, 'h': 16, 'ocrText': '217,60', 'rawOcrText': '217,60', 'confPts': 86, 'typeOfObject': 'decimal number'}
+{'codeName': '534', 'x': 1344, 'y': 1060, 'w': 39, 'h': 16, 'ocrText': '35,0', 'rawOcrText': '35,0', 'confPts': 91, 'typeOfObject': 'decimal number'}
+{'codeName': '535', 'x': 1463, 'y': 1060, 'w': 49, 'h': 16, 'ocrText': '32,64', 'rawOcrText': '32,64', 'confPts': 52, 'typeOfObject': 'decimal number'}
+{'codeName': '536', 'x': 1578, 'y': 1059, 'w': 58, 'h': 17, 'ocrText': '70,24', 'rawOcrText': '70,24', 'confPts': 31, 'typeOfObject': 'decimal number'}
+{'codeName': '540', 'x': 226, 'y': 1089, 'w': 42, 'h': 16, 'ocrText': 'mac', 'rawOcrText': 'mac', 'confPts': 42, 'typeOfObject': 'unknown'}
+{'codeName': '542', 'x': 121, 'y': 1118, 'w': 59, 'h': 16, 'ocrText': '580', 'rawOcrText': '580', 'confPts': 13, 'typeOfObject': 'integer number'}
+{'codeName': '543', 'x': 261, 'y': 1118, 'w': 49, 'h': 17, 'ocrText': '2,606', 'rawOcrText': '2,606', 'confPts': 54, 'typeOfObject': 'decimal number'}
+{'codeName': '548', 'x': 774, 'y': 1119, 'w': 59, 'h': 16, 'ocrText': '363,00', 'rawOcrText': '363,00', 'confPts': 87, 'typeOfObject': 'decimal number'}
+{'codeName': '549', 'x': 961, 'y': 1119, 'w': 58, 'h': 16, 'ocrText': '363,00', 'rawOcrText': '363,00', 'confPts': 86, 'typeOfObject': 'decimal number'}
+{'codeName': '550', 'x': 1041, 'y': 1119, 'w': 8, 'h': 16, 'ocrText': '3', 'rawOcrText': '3', 'confPts': 38, 'typeOfObject': 'integer number'}
+{'codeName': '551', 'x': 1148, 'y': 1119, 'w': 58, 'h': 16, 'ocrText': '363,00', 'rawOcrText': '363,00', 'confPts': 74, 'typeOfObject': 'decimal number'}
+{'codeName': '552', 'x': 1271, 'y': 1119, 'w': 59, 'h': 17, 'ocrText': '437,82', 'rawOcrText': '437,82', 'confPts': 84, 'typeOfObject': 'decimal number'}
+{'codeName': '553', 'x': 1344, 'y': 1119, 'w': 38, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 95, 'typeOfObject': 'decimal number'}
+{'codeName': '554', 'x': 1462, 'y': 1118, 'w': 50, 'h': 17, 'ocrText': '65,67', 'rawOcrText': '65,67', 'confPts': 91, 'typeOfObject': 'decimal number'}
+{'codeName': '555', 'x': 1577, 'y': 1118, 'w': 60, 'h': 17, 'ocrText': '563,45', 'rawOcrText': '563,45', 'confPts': 63, 'typeOfObject': 'decimal number'}
+{'codeName': '557', 'x': 123, 'y': 1148, 'w': 55, 'h': 16, 'ocrText': 'varan', 'rawOcrText': 'varan', 'confPts': 12, 'typeOfObject': 'word'}
+{'codeName': '558', 'x': 261, 'y': 1148, 'w': 49, 'h': 17, 'ocrText': '2,552', 'rawOcrText': '2,552', 'confPts': 70, 'typeOfObject': 'decimal number'}
+{'codeName': '559', 'x': 339, 'y': 1148, 'w': 40, 'h': 16, 'ocrText': '"ARO', 'rawOcrText': '"ARO', 'confPts': 54, 'typeOfObject': 'word'}
+{'codeName': '560', 'x': 386, 'y': 1145, 'w': 61, 'h': 19, 'ocrText': 'OMĚENÁ', 'rawOcrText': 'OMĚENÁ', 'confPts': 11, 'typeOfObject': 'unknown'}
+{'codeName': '561', 'x': 455, 'y': 1145, 'w': 51, 'h': 19, 'ocrText': 'ŠunKA', 'rawOcrText': 'ŠunKA', 'confPts': 27, 'typeOfObject': 'unknown'}
+{'codeName': '562', 'x': 514, 'y': 1148, 'w': 119, 'h': 19, 'ocrText': 'STAMD.VELKÁG', 'rawOcrText': 'STAMD.VELKÁG', 'confPts': 25, 'typeOfObject': 'unknown'}
+{'codeName': '564', 'x': 716, 'y': 1148, 'w': 115, 'h': 17, 'ocrText': 'Individuální', 'rawOcrText': 'Individuální', 'confPts': 43, 'typeOfObject': 'word'}
+{'codeName': '565', 'x': 969, 'y': 1149, 'w': 50, 'h': 16, 'ocrText': '9,35', 'rawOcrText': '9,35', 'confPts': 73, 'typeOfObject': 'decimal number'}
+{'codeName': '566', 'x': 1042, 'y': 1149, 'w': 7, 'h': 15, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 59, 'typeOfObject': 'integer number'}
+{'codeName': '567', 'x': 1156, 'y': 1148, 'w': 50, 'h': 17, 'ocrText': '94,35', 'rawOcrText': '94,35', 'confPts': 64, 'typeOfObject': 'decimal number'}
+{'codeName': '568', 'x': 1272, 'y': 1148, 'w': 59, 'h': 17, 'ocrText': '240,78', 'rawOcrText': '240,78', 'confPts': 93, 'typeOfObject': 'decimal number'}
+{'codeName': '569', 'x': 1344, 'y': 1148, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 94, 'typeOfObject': 'decimal number'}
+{'codeName': '570', 'x': 1464, 'y': 1148, 'w': 48, 'h': 17, 'ocrText': '6,12', 'rawOcrText': '6,12', 'confPts': 56, 'typeOfObject': 'decimal number'}
+{'codeName': '571', 'x': 1578, 'y': 1148, 'w': 59, 'h': 16, 'ocrText': '276,20', 'rawOcrText': '276,20', 'confPts': 47, 'typeOfObject': 'decimal number'}
+{'codeName': '573', 'x': 123, 'y': 1178, 'w': 57, 'h': 16, 'ocrText': 'B)', 'rawOcrText': 'B)', 'confPts': 29, 'typeOfObject': 'unknown'}
+{'codeName': '574', 'x': 262, 'y': 1178, 'w': 48, 'h': 17, 'ocrText': '2,420', 'rawOcrText': '2,420', 'confPts': 53, 'typeOfObject': 'decimal number'}
+{'codeName': '575', 'x': 339, 'y': 1178, 'w': 88, 'h': 16, 'ocrText': 'MMEMAULES', 'rawOcrText': 'MMEMAULES', 'confPts': 30, 'typeOfObject': 'unknown'}
+{'codeName': '577', 'x': 445, 'y': 1178, 'w': 60, 'h': 16, 'ocrText': 'PLOUHÝ', 'rawOcrText': 'PLOUHÝ', 'confPts': 16, 'typeOfObject': 'unknown'}
+{'codeName': '578', 'x': 775, 'y': 1179, 'w': 58, 'h': 16, 'ocrText': '284,00', 'rawOcrText': '284,00', 'confPts': 69, 'typeOfObject': 'decimal number'}
+{'codeName': '579', 'x': 962, 'y': 1179, 'w': 58, 'h': 16, 'ocrText': '284,00', 'rawOcrText': '284,00', 'confPts': 63, 'typeOfObject': 'decimal number'}
+{'codeName': '580', 'x': 1042, 'y': 1179, 'w': 7, 'h': 15, 'ocrText': 'z', 'rawOcrText': 'z', 'confPts': 40, 'typeOfObject': 'word'}
+{'codeName': '581', 'x': 1149, 'y': 1179, 'w': 57, 'h': 16, 'ocrText': '284,00', 'rawOcrText': '284,00', 'confPts': 68, 'typeOfObject': 'decimal number'}
+{'codeName': '582', 'x': 1272, 'y': 1178, 'w': 58, 'h': 17, 'ocrText': '259,44', 'rawOcrText': '259,44', 'confPts': 90, 'typeOfObject': 'decimal number'}
+{'codeName': '583', 'x': 1344, 'y': 1179, 'w': 39, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 87, 'typeOfObject': 'decimal number'}
+{'codeName': '584', 'x': 1464, 'y': 1178, 'w': 48, 'h': 17, 'ocrText': '3,2', 'rawOcrText': '3,2', 'confPts': 67, 'typeOfObject': 'decimal number'}
+{'codeName': '585', 'x': 1578, 'y': 1178, 'w': 59, 'h': 16, 'ocrText': '20,36', 'rawOcrText': '20,36', 'confPts': 67, 'typeOfObject': 'decimal number'}
+{'codeName': '587', 'x': 121, 'y': 1207, 'w': 58, 'h': 16, 'ocrText': 'DOBA', 'rawOcrText': 'DOBA', 'confPts': 13, 'typeOfObject': 'word'}
+{'codeName': '588', 'x': 262, 'y': 1208, 'w': 48, 'h': 17, 'ocrText': '2,463', 'rawOcrText': '2,463', 'confPts': 56, 'typeOfObject': 'decimal number'}
+{'codeName': '589', 'x': 339, 'y': 1205, 'w': 79, 'h': 19, 'ocrText': '*POLEČAN', 'rawOcrText': '*POLEČAN', 'confPts': 51, 'typeOfObject': 'unknown'}
+{'codeName': '592', 'x': 775, 'y': 1208, 'w': 58, 'h': 17, 'ocrText': '155,00', 'rawOcrText': '155,00', 'confPts': 79, 'typeOfObject': 'decimal number'}
+{'codeName': '593', 'x': 962, 'y': 1208, 'w': 58, 'h': 17, 'ocrText': '355,00', 'rawOcrText': '355,00', 'confPts': 68, 'typeOfObject': 'decimal number'}
+{'codeName': '594', 'x': 1042, 'y': 1209, 'w': 7, 'h': 15, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 34, 'typeOfObject': 'word'}
+{'codeName': '595', 'x': 1149, 'y': 1208, 'w': 57, 'h': 17, 'ocrText': '155,00', 'rawOcrText': '155,00', 'confPts': 71, 'typeOfObject': 'decimal number'}
+{'codeName': '596', 'x': 1272, 'y': 1208, 'w': 58, 'h': 17, 'ocrText': '223,67', 'rawOcrText': '223,67', 'confPts': 93, 'typeOfObject': 'decimal number'}
+{'codeName': '597', 'x': 1344, 'y': 1208, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 92, 'typeOfObject': 'decimal number'}
+{'codeName': '598', 'x': 1464, 'y': 1208, 'w': 48, 'h': 17, 'ocrText': '33,55', 'rawOcrText': '33,55', 'confPts': 87, 'typeOfObject': 'decimal number'}
+{'codeName': '599', 'x': 1578, 'y': 1208, 'w': 57, 'h': 16, 'ocrText': '257,21', 'rawOcrText': '257,21', 'confPts': 63, 'typeOfObject': 'decimal number'}
+{'codeName': '601', 'x': 121, 'y': 1237, 'w': 58, 'h': 16, 'ocrText': '65342', 'rawOcrText': '65342', 'confPts': 26, 'typeOfObject': 'integer number'}
+{'codeName': '602', 'x': 262, 'y': 1237, 'w': 49, 'h': 17, 'ocrText': '2,439', 'rawOcrText': '2,439', 'confPts': 52, 'typeOfObject': 'decimal number'}
+{'codeName': '606', 'x': 553, 'y': 1237, 'w': 51, 'h': 16, 'ocrText': 'SALÁM', 'rawOcrText': 'SALÁM', 'confPts': 32, 'typeOfObject': 'word'}
+{'codeName': '607', 'x': 775, 'y': 1237, 'w': 58, 'h': 17, 'ocrText': '128,00', 'rawOcrText': '128,00', 'confPts': 83, 'typeOfObject': 'decimal number'}
+{'codeName': '608', 'x': 962, 'y': 1237, 'w': 58, 'h': 17, 'ocrText': '228,00', 'rawOcrText': '228,00', 'confPts': 69, 'typeOfObject': 'decimal number'}
+{'codeName': '609', 'x': 1042, 'y': 1238, 'w': 8, 'h': 15, 'ocrText': 'i', 'rawOcrText': 'i', 'confPts': 31, 'typeOfObject': 'word'}
+{'codeName': '610', 'x': 1149, 'y': 1237, 'w': 58, 'h': 17, 'ocrText': '128,00', 'rawOcrText': '128,00', 'confPts': 72, 'typeOfObject': 'decimal number'}
+{'codeName': '611', 'x': 1273, 'y': 1237, 'w': 58, 'h': 17, 'ocrText': '381,63', 'rawOcrText': '381,63', 'confPts': 74, 'typeOfObject': 'decimal number'}
+{'codeName': '612', 'x': 1344, 'y': 1237, 'w': 39, 'h': 17, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 96, 'typeOfObject': 'decimal number'}
+{'codeName': '613', 'x': 1463, 'y': 1237, 'w': 49, 'h': 17, 'ocrText': '27,2', 'rawOcrText': '27,2', 'confPts': 69, 'typeOfObject': 'decimal number'}
+{'codeName': '614', 'x': 1578, 'y': 1237, 'w': 59, 'h': 17, 'ocrText': 'E', 'rawOcrText': 'E', 'confPts': 55, 'typeOfObject': 'unknown'}
+{'codeName': '616', 'x': 121, 'y': 1266, 'w': 59, 'h': 16, 'ocrText': 'Dao?', 'rawOcrText': 'Dao?', 'confPts': 18, 'typeOfObject': 'word'}
+{'codeName': '617', 'x': 260, 'y': 1267, 'w': 51, 'h': 17, 'ocrText': '4,030', 'rawOcrText': '4,030', 'confPts': 52, 'typeOfObject': 'decimal number'}
+{'codeName': '618', 'x': 339, 'y': 1267, 'w': 60, 'h': 16, 'ocrText': 'MUŽENÁ', 'rawOcrText': 'MUŽENÁ', 'confPts': 61, 'typeOfObject': 'unknown'}
+{'codeName': '619', 'x': 406, 'y': 1267, 'w': 80, 'h': 16, 'ocrText': 'KAKOVICE', 'rawOcrText': 'KAKOVICE', 'confPts': 58, 'typeOfObject': 'word'}
+{'codeName': '620', 'x': 494, 'y': 1267, 'w': 38, 'h': 16, 'ocrText': 'B.K-', 'rawOcrText': 'B.K-', 'confPts': 28, 'typeOfObject': 'unknown'}
+{'codeName': '622', 'x': 961, 'y': 1267, 'w': 58, 'h': 17, 'ocrText': '135,67', 'rawOcrText': '135,67', 'confPts': 64, 'typeOfObject': 'decimal number'}
+{'codeName': '623', 'x': 1041, 'y': 1267, 'w': 9, 'h': 16, 'ocrText': '1', 'rawOcrText': '1', 'confPts': 91, 'typeOfObject': 'integer number'}
+{'codeName': '624', 'x': 1148, 'y': 1267, 'w': 58, 'h': 17, 'ocrText': '135,67', 'rawOcrText': '135,67', 'confPts': 85, 'typeOfObject': 'decimal number'}
+{'codeName': '626', 'x': 1344, 'y': 1267, 'w': 39, 'h': 16, 'ocrText': '15,0', 'rawOcrText': '15,0', 'confPts': 90, 'typeOfObject': 'decimal number'}
+{'codeName': '627', 'x': 1462, 'y': 1267, 'w': 51, 'h': 17, 'ocrText': '61,73', 'rawOcrText': '61,73', 'confPts': 63, 'typeOfObject': 'decimal number'}
+{'codeName': '628', 'x': 1577, 'y': 1267, 'w': 60, 'h': 16, 'ocrText': '626,56', 'rawOcrText': '626,56', 'confPts': 77, 'typeOfObject': 'decimal number'}
+{'codeName': '630', 'x': 119, 'y': 1296, 'w': 51, 'h': 16, 'ocrText': 'Komes', 'rawOcrText': 'Komes', 'confPts': 15, 'typeOfObject': 'unknown'}
+{'codeName': '632', 'x': 278, 'y': 1297, 'w': 26, 'h': 15, 'ocrText': '4-', 'rawOcrText': '4-', 'confPts': 66, 'typeOfObject': 'integer number'}
+{'codeName': '640', 'x': 319, 'y': 1596, 'w': 17, 'h': 14, 'ocrText': 'KE', 'rawOcrText': 'KE', 'confPts': 54, 'typeOfObject': 'word'}
+{'codeName': '641', 'x': 343, 'y': 1596, 'w': 35, 'h': 14, 'ocrText': '8', 'rawOcrText': '8', 'confPts': 14, 'typeOfObject': 'integer number'}
+{'codeName': '643', 'x': 456, 'y': 1595, 'w': 51, 'h': 15, 'ocrText': 'MIS', 'rawOcrText': 'MIS', 'confPts': 42, 'typeOfObject': 'word'}
+{'codeName': '645', 'x': 570, 'y': 1596, 'w': 27, 'h': 14, 'ocrText': 'ME', 'rawOcrText': 'ME', 'confPts': 34, 'typeOfObject': 'word'}
+{'codeName': '646', 'x': 602, 'y': 1593, 'w': 42, 'h': 17, 'ocrText': 'OM', 'rawOcrText': 'OM', 'confPts': 7, 'typeOfObject': 'unknown'}
+{'codeName': '647', 'x': 651, 'y': 1596, 'w': 53, 'h': 14, 'ocrText': 'RUE', 'rawOcrText': 'RUE', 'confPts': 47, 'typeOfObject': 'unknown'}
+{'codeName': '652', 'x': 270, 'y': 1615, 'w': 18, 'h': 15, 'ocrText': 'Ze', 'rawOcrText': 'Ze', 'confPts': 49, 'typeOfObject': 'word'}
+{'codeName': '657', 'x': 507, 'y': 1615, 'w': 41, 'h': 15, 'ocrText': 'PN', 'rawOcrText': 'PN', 'confPts': 12, 'typeOfObject': 'word'}
+{'codeName': '660', 'x': 741, 'y': 1620, 'w': 10, 'h': 10, 'ocrText': 'v', 'rawOcrText': 'v', 'confPts': 28, 'typeOfObject': 'word'}
+{'codeName': '661', 'x': 758, 'y': 1616, 'w': 59, 'h': 16, 'ocrText': 'Bajan', 'rawOcrText': 'Bajan', 'confPts': 8, 'typeOfObject': 'word'}
+{'codeName': '666', 'x': 1066, 'y': 1619, 'w': 11, 'h': 12, 'ocrText': '3', 'rawOcrText': '3', 'confPts': 56, 'typeOfObject': 'integer number'}
+{'codeName': '667', 'x': 1083, 'y': 1616, 'w': 41, 'h': 16, 'ocrText': 'AKE', 'rawOcrText': 'AKE', 'confPts': 28, 'typeOfObject': 'unknown'}
+{'codeName': '668', 'x': 1131, 'y': 1618, 'w': 67, 'h': 15, 'ocrText': 'UHR', 'rawOcrText': 'UHR', 'confPts': 26, 'typeOfObject': 'word'}
+{'codeName': '669', 'x': 1206, 'y': 1618, 'w': 66, 'h': 15, 'ocrText': 'misa', 'rawOcrText': 'misa', 'confPts': 12, 'typeOfObject': 'unknown'}
+{'codeName': '670', 'x': 1278, 'y': 1619, 'w': 10, 'h': 12, 'ocrText': '3', 'rawOcrText': '3', 'confPts': 59, 'typeOfObject': 'integer number'}
+{'codeName': '674', 'x': 1465, 'y': 1616, 'w': 67, 'h': 15, 'ocrText': 'UKB', 'rawOcrText': 'UKB', 'confPts': 28, 'typeOfObject': 'unknown'}
+{'codeName': '675', 'x': 1538, 'y': 1616, 'w': 64, 'h': 15, 'ocrText': 'NKU', 'rawOcrText': 'NKU', 'confPts': 25, 'typeOfObject': 'unknown'}
+{'codeName': '682', 'x': 0, 'y': 0, 'w': 1700, 'h': 2338, 'ocrText': 'Z', 'rawOcrText': 'Z', 'confPts': 44, 'typeOfObject': 'word'}
+{'codeName': '683', 'x': 408, 'y': 1639, 'w': 18, 'h': 12, 'ocrText': 'rm', 'rawOcrText': 'rm', 'confPts': 26, 'typeOfObject': 'unknown'}
+{'codeName': '684', 'x': 433, 'y': 1636, 'w': 107, 'h': 17, 'ocrText': 'EMA', 'rawOcrText': 'EMA', 'confPts': 14, 'typeOfObject': 'word'}
+{'codeName': '685', 'x': 0, 'y': 0, 'w': 1700, 'h': 2338, 'ocrText': 'eh', 'rawOcrText': 'eh', 'confPts': 14, 'typeOfObject': 'unknown'}
+{'codeName': '687', 'x': 627, 'y': 1638, 'w': 50, 'h': 14, 'ocrText': 'E', 'rawOcrText': 'E', 'confPts': 36, 'typeOfObject': 'unknown'}
+{'codeName': '689', 'x': 0, 'y': 0, 'w': 1700, 'h': 2338, 'ocrText': 'm', 'rawOcrText': 'm', 'confPts': 28, 'typeOfObject': 'unit'}
+{'codeName': '690', 'x': 0, 'y': 0, 'w': 1700, 'h': 2338, 'ocrText': 'R', 'rawOcrText': 'R', 'confPts': 17, 'typeOfObject': 'word'}
+{'codeName': '696', 'x': 115, 'y': 1676, 'w': 43, 'h': 15, 'ocrText': 'žáka', 'rawOcrText': 'žáka', 'confPts': 20, 'typeOfObject': 'word'}
+{'codeName': '699', 'x': 319, 'y': 1676, 'w': 52, 'h': 15, 'ocrText': 'režné', 'rawOcrText': 'režné', 'confPts': 8, 'typeOfObject': 'word'}
+{'codeName': '700', 'x': 373, 'y': 1677, 'w': 29, 'h': 14, 'ocrText': 'SD', 'rawOcrText': 'SD', 'confPts': 58, 'typeOfObject': 'unknown'}
+{'codeName': '701', 'x': 408, 'y': 1680, 'w': 88, 'h': 14, 'ocrText': 'pom“', 'rawOcrText': 'pom“', 'confPts': 10, 'typeOfObject': 'unknown'}
+{'codeName': '702', 'x': 507, 'y': 1677, 'w': 30, 'h': 14, 'ocrText': 'SEE', 'rawOcrText': 'SEE', 'confPts': 56, 'typeOfObject': 'unknown'}
+{'codeName': '703', 'x': 546, 'y': 1674, 'w': 26, 'h': 17, 'ocrText': 'Čí', 'rawOcrText': 'Čí', 'confPts': 18, 'typeOfObject': 'unit'}
+{'codeName': '706', 'x': 734, 'y': 1678, 'w': 72, 'h': 14, 'ocrText': 'B0788', 'rawOcrText': 'B0788', 'confPts': 41, 'typeOfObject': 'unknown'}
+{'codeName': '708', 'x': 115, 'y': 1696, 'w': 31, 'h': 14, 'ocrText': 'JF', 'rawOcrText': 'JF', 'confPts': 35, 'typeOfObject': 'unknown'}
+{'codeName': '710', 'x': 0, 'y': 0, 'w': 1700, 'h': 2338, 'ocrText': 'Bike', 'rawOcrText': 'Bike', 'confPts': 28, 'typeOfObject': 'unknown'}
+{'codeName': '711', 'x': 229, 'y': 1697, 'w': 74, 'h': 13, 'ocrText': 'AEZ.', 'rawOcrText': 'AEZ.', 'confPts': 7, 'typeOfObject': 'unknown'}
+{'codeName': '712', 'x': 0, 'y': 0, 'w': 1700, 'h': 2338, 'ocrText': 'ij', 'rawOcrText': 'ij', 'confPts': 27, 'typeOfObject': 'unknown'}
+{'codeName': '713', 'x': 305, 'y': 1697, 'w': 149, 'h': 14, 'ocrText': 'AB', 'rawOcrText': 'AB', 'confPts': 34, 'typeOfObject': 'unknown'}
+{'codeName': '714', 'x': 0, 'y': 0, 'w': 1700, 'h': 2338, 'ocrText': 'žid', 'rawOcrText': 'žid', 'confPts': 28, 'typeOfObject': 'word'}
+{'codeName': '715', 'x': 452, 'y': 1697, 'w': 22, 'h': 14, 'ocrText': 'dř', 'rawOcrText': 'dř', 'confPts': 22, 'typeOfObject': 'unknown'}
+{'codeName': '717', 'x': 115, 'y': 1717, 'w': 31, 'h': 14, 'ocrText': 'OH', 'rawOcrText': 'OH', 'confPts': 19, 'typeOfObject': 'word'}
+{'codeName': '718', 'x': 155, 'y': 1717, 'w': 67, 'h': 14, 'ocrText': 'MRNA', 'rawOcrText': 'MRNA', 'confPts': 34, 'typeOfObject': 'unknown'}
+{'codeName': '720', 'x': 297, 'y': 1723, 'w': 3, 'h': 1, 'ocrText': 'GAME', 'rawOcrText': 'GAME', 'confPts': 23, 'typeOfObject': 'word'}
+{'codeName': '722', 'x': 371, 'y': 1717, 'w': 76, 'h': 14, 'ocrText': 'A', 'rawOcrText': 'A', 'confPts': 43, 'typeOfObject': 'word'}
+{'codeName': '723', 'x': 449, 'y': 1717, 'w': 66, 'h': 14, 'ocrText': 'ZN', 'rawOcrText': 'ZN', 'confPts': 26, 'typeOfObject': 'word'}
+{'codeName': '735', 'x': 118, 'y': 1771, 'w': 102, 'h': 21, 'ocrText': 'Spotřební', 'rawOcrText': 'Spotřební', 'confPts': 69, 'typeOfObject': 'word'}
+{'codeName': '736', 'x': 231, 'y': 1771, 'w': 36, 'h': 19, 'ocrText': 'daň', 'rawOcrText': 'daň', 'confPts': 95, 'typeOfObject': 'word'}
+{'codeName': '737', 'x': 277, 'y': 1772, 'w': 78, 'h': 18, 'ocrText': 'celkem:', 'rawOcrText': 'celkem:', 'confPts': 93, 'typeOfObject': 'word'}
+{'codeName': '738', 'x': 368, 'y': 1773, 'w': 48, 'h': 19, 'ocrText': '0,00', 'rawOcrText': '0,00', 'confPts': 87, 'typeOfObject': 'decimal number'}
+{'codeName': '740', 'x': 1060, 'y': 1773, 'w': 82, 'h': 18, 'ocrText': 'Celková', 'rawOcrText': 'Celková', 'confPts': 87, 'typeOfObject': 'word'}
+{'codeName': '741', 'x': 1152, 'y': 1773, 'w': 70, 'h': 18, 'ocrText': 'částka', 'rawOcrText': 'částka', 'confPts': 95, 'typeOfObject': 'word'}
+{'codeName': '742', 'x': 1510, 'y': 1774, 'w': 23, 'h': 17, 'ocrText': '21', 'rawOcrText': '21', 'confPts': 67, 'typeOfObject': 'integer number'}
+{'codeName': '743', 'x': 1545, 'y': 1774, 'w': 68, 'h': 19, 'ocrText': '290,68', 'rawOcrText': '290,68', 'confPts': 92, 'typeOfObject': 'decimal number'}
+{'codeName': '745', 'x': 149, 'y': 1803, 'w': 67, 'h': 19, 'ocrText': 'seučet', 'rawOcrText': 'seučet', 'confPts': 60, 'typeOfObject': 'unknown'}
+{'codeName': '748', 'x': 334, 'y': 1804, 'w': 48, 'h': 18, 'ocrText': 'daňt', 'rawOcrText': 'daňt', 'confPts': 44, 'typeOfObject': 'unknown'}
+{'codeName': '749', 'x': 389, 'y': 1805, 'w': 81, 'h': 17, 'ocrText': 'hodnota', 'rawOcrText': 'hodnota', 'confPts': 90, 'typeOfObject': 'word'}
+{'codeName': '750', 'x': 481, 'y': 1804, 'w': 56, 'h': 18, 'ocrText': 'zboží', 'rawOcrText': 'zboží', 'confPts': 94, 'typeOfObject': 'word'}
+{'codeName': '752', 'x': 569, 'y': 1804, 'w': 70, 'h': 19, 'ocrText': 'částka', 'rawOcrText': 'částka', 'confPts': 93, 'typeOfObject': 'word'}
+{'codeName': '753', 'x': 649, 'y': 1804, 'w': 47, 'h': 19, 'ocrText': 'damě', 'rawOcrText': 'damě', 'confPts': 85, 'typeOfObject': 'unknown'}
+{'codeName': '756', 'x': 1061, 'y': 1807, 'w': 46, 'h': 16, 'ocrText': 'Kurz', 'rawOcrText': 'Kurz', 'confPts': 80, 'typeOfObject': 'word'}
+{'codeName': '757', 'x': 1118, 'y': 1806, 'w': 35, 'h': 17, 'ocrText': 'EUR', 'rawOcrText': 'EUR', 'confPts': 87, 'typeOfObject': 'currencie'}
+{'codeName': '759', 'x': 1545, 'y': 1806, 'w': 68, 'h': 19, 'ocrText': '26,685', 'rawOcrText': '26,685', 'confPts': 96, 'typeOfObject': 'decimal number'}
+{'codeName': '761', 'x': 208, 'y': 1837, 'w': 33, 'h': 18, 'ocrText': '159', 'rawOcrText': '159', 'confPts': 73, 'typeOfObject': 'integer number'}
+{'codeName': '762', 'x': 360, 'y': 1837, 'w': 21, 'h': 18, 'ocrText': '15', 'rawOcrText': '15', 'confPts': 87, 'typeOfObject': 'integer number'}
+{'codeName': '764', 'x': 437, 'y': 1837, 'w': 22, 'h': 18, 'ocrText': '18', 'rawOcrText': '18', 'confPts': 58, 'typeOfObject': 'integer number'}
+{'codeName': '765', 'x': 469, 'y': 1837, 'w': 69, 'h': 19, 'ocrText': '006,45', 'rawOcrText': '006,45', 'confPts': 67, 'typeOfObject': 'decimal number'}
+{'codeName': '766', 'x': 604, 'y': 1837, 'w': 11, 'h': 18, 'ocrText': '2', 'rawOcrText': '2', 'confPts': 60, 'typeOfObject': 'integer number'}
+{'codeName': '767', 'x': 627, 'y': 1838, 'w': 68, 'h': 19, 'ocrText': '712,97', 'rawOcrText': '712,97', 'confPts': 59, 'typeOfObject': 'decimal number'}
+{'codeName': '768', 'x': 750, 'y': 1838, 'w': 23, 'h': 18, 'ocrText': '20', 'rawOcrText': '20', 'confPts': 57, 'typeOfObject': 'integer number'}
+{'codeName': '769', 'x': 785, 'y': 1838, 'w': 67, 'h': 19, 'ocrText': '799,42', 'rawOcrText': '799,42', 'confPts': 57, 'typeOfObject': 'decimal number'}
+{'codeName': '771', 'x': 898, 'y': 1842, 'w': 47, 'h': 13, 'ocrText': 'aužís', 'rawOcrText': 'aužís', 'confPts': 10, 'typeOfObject': 'unknown'}
+{'codeName': '772', 'x': 958, 'y': 1841, 'w': 54, 'h': 14, 'ocrText': '-Pe', 'rawOcrText': '-Pe', 'confPts': 12, 'typeOfObject': 'unknown'}
+{'codeName': '773', 'x': 1061, 'y': 1839, 'w': 81, 'h': 17, 'ocrText': 'Hodnota', 'rawOcrText': 'Hodnota', 'confPts': 17, 'typeOfObject': 'word'}
+{'codeName': '774', 'x': 1152, 'y': 1843, 'w': 12, 'h': 13, 'ocrText': 'v', 'rawOcrText': 'v', 'confPts': 96, 'typeOfObject': 'word'}
+{'codeName': '775', 'x': 1175, 'y': 1838, 'w': 35, 'h': 18, 'ocrText': 'EUR', 'rawOcrText': 'EUR', 'confPts': 93, 'typeOfObject': 'currencie'}
+{'codeName': '776', 'x': 1546, 'y': 1839, 'w': 67, 'h': 18, 'ocrText': '797.65', 'rawOcrText': '797.65', 'confPts': 61, 'typeOfObject': 'decimal number'}
+{'codeName': '779', 'x': 357, 'y': 1870, 'w': 22, 'h': 17, 'ocrText': '2', 'rawOcrText': '2', 'confPts': 55, 'typeOfObject': 'integer number'}
+{'codeName': '780', 'x': 469, 'y': 1870, 'w': 70, 'h': 19, 'ocrText': '406,00', 'rawOcrText': '406,00', 'confPts': 88, 'typeOfObject': 'decimal number'}
+{'codeName': '781', 'x': 637, 'y': 1870, 'w': 58, 'h': 19, 'ocrText': '85,26', 'rawOcrText': '85,26', 'confPts': 45, 'typeOfObject': 'decimal number'}
+{'codeName': '782', 'x': 783, 'y': 1871, 'w': 70, 'h': 19, 'ocrText': '491.26', 'rawOcrText': '491.26', 'confPts': 86, 'typeOfObject': 'decimal number'}
+{'codeName': '784', 'x': 1234, 'y': 1870, 'w': 65, 'h': 19, 'ocrText': 'rozdíl', 'rawOcrText': 'rozdíl', 'confPts': 21, 'typeOfObject': 'word'}
+{'codeName': '785', 'x': 1566, 'y': 1871, 'w': 48, 'h': 19, 'ocrText': '0,00', 'rawOcrText': '0,00', 'confPts': 90, 'typeOfObject': 'decimal number'}
+{'codeName': '790', 'x': 1061, 'y': 1903, 'w': 71, 'h': 18, 'ocrText': 'Čelkém', 'rawOcrText': 'Čelkém', 'confPts': 60, 'typeOfObject': 'unknown'}
+{'codeName': '791', 'x': 1141, 'y': 1904, 'w': 12, 'h': 17, 'ocrText': 'k', 'rawOcrText': 'k', 'confPts': 79, 'typeOfObject': 'word'}
+{'codeName': '792', 'x': 1164, 'y': 1903, 'w': 69, 'h': 18, 'ocrText': 'úmradě', 'rawOcrText': 'úmradě', 'confPts': 76, 'typeOfObject': 'unknown'}
+{'codeName': '793', 'x': 1511, 'y': 1904, 'w': 21, 'h': 17, 'ocrText': '21', 'rawOcrText': '21', 'confPts': 67, 'typeOfObject': 'integer number'}
+{'codeName': '794', 'x': 1545, 'y': 1904, 'w': 68, 'h': 19, 'ocrText': '290,68', 'rawOcrText': '290,68', 'confPts': 86, 'typeOfObject': 'decimal number'}
+{'codeName': '797', 'x': 215, 'y': 1934, 'w': 70, 'h': 18, 'ocrText': 'Celkem', 'rawOcrText': 'Celkem', 'confPts': 56, 'typeOfObject': 'word'}
+{'codeName': '798', 'x': 436, 'y': 1934, 'w': 23, 'h': 19, 'ocrText': '18', 'rawOcrText': '18', 'confPts': 84, 'typeOfObject': 'integer number'}
+{'codeName': '799', 'x': 469, 'y': 1934, 'w': 69, 'h': 20, 'ocrText': '492,45', 'rawOcrText': '492,45', 'confPts': 89, 'typeOfObject': 'decimal number'}
+{'codeName': '800', 'x': 604, 'y': 1935, 'w': 11, 'h': 18, 'ocrText': '2', 'rawOcrText': '2', 'confPts': 87, 'typeOfObject': 'integer number'}
+{'codeName': '801', 'x': 627, 'y': 1935, 'w': 68, 'h': 19, 'ocrText': '798.23', 'rawOcrText': '798.23', 'confPts': 71, 'typeOfObject': 'decimal number'}
+{'codeName': '803', 'x': 749, 'y': 1935, 'w': 23, 'h': 18, 'ocrText': '21', 'rawOcrText': '21', 'confPts': 67, 'typeOfObject': 'integer number'}
+{'codeName': '804', 'x': 784, 'y': 1935, 'w': 69, 'h': 20, 'ocrText': '290,68', 'rawOcrText': '290,68', 'confPts': 83, 'typeOfObject': 'decimal number'}
+{'codeName': '806', 'x': 1211, 'y': 1936, 'w': 21, 'h': 18, 'ocrText': '14', 'rawOcrText': '14', 'confPts': 84, 'typeOfObject': 'integer number'}
+{'codeName': '807', 'x': 1510, 'y': 1936, 'w': 22, 'h': 18, 'ocrText': '21', 'rawOcrText': '21', 'confPts': 69, 'typeOfObject': 'integer number'}
+{'codeName': '808', 'x': 1544, 'y': 1936, 'w': 69, 'h': 20, 'ocrText': '290,68', 'rawOcrText': '290,68', 'confPts': 77, 'typeOfObject': 'decimal number'}
+{'codeName': '812', 'x': 145, 'y': 2017, 'w': 34, 'h': 21, 'ocrText': 'Čas', 'rawOcrText': 'Čas', 'confPts': 96, 'typeOfObject': 'word'}
+{'codeName': '813', 'x': 190, 'y': 2020, 'w': 78, 'h': 18, 'ocrText': 'dodání:', 'rawOcrText': 'dodání:', 'confPts': 70, 'typeOfObject': 'word'}
+{'codeName': '814', 'x': 282, 'y': 2021, 'w': 115, 'h': 18, 'ocrText': '20.07.2020', 'rawOcrText': '20.07.2020', 'confPts': 95, 'typeOfObject': 'date'}
+{'codeName': '815', 'x': 409, 'y': 2021, 'w': 55, 'h': 18, 'ocrText': '10:47', 'rawOcrText': '10:47', 'confPts': 94, 'typeOfObject': 'time'}
+{'codeName': '816', 'x': 652, 'y': 2018, 'w': 81, 'h': 21, 'ocrText': 'Čitelné', 'rawOcrText': 'Čitelné', 'confPts': 65, 'typeOfObject': 'word'}
+{'codeName': '817', 'x': 745, 'y': 2021, 'w': 56, 'h': 22, 'ocrText': 'jméno', 'rawOcrText': 'jméno', 'confPts': 13, 'typeOfObject': 'word'}
+{'codeName': '818', 'x': 812, 'y': 2021, 'w': 156, 'h': 22, 'ocrText': 'přebírajícího.', 'rawOcrText': 'přebírajícího.', 'confPts': 91, 'typeOfObject': 'word'}
+{'codeName': '820', 'x': 145, 'y': 2049, 'w': 66, 'h': 21, 'ocrText': 'Řidič:', 'rawOcrText': 'Řidič:', 'confPts': 89, 'typeOfObject': 'word'}
+{'codeName': '821', 'x': 224, 'y': 2052, 'w': 68, 'h': 19, 'ocrText': 'Daniel', 'rawOcrText': 'Daniel', 'confPts': 40, 'typeOfObject': 'word'}
+{'codeName': '822', 'x': 304, 'y': 2053, 'w': 92, 'h': 18, 'ocrText': 'Retrides', 'rawOcrText': 'Retrides', 'confPts': 49, 'typeOfObject': 'unknown'}
+{'codeName': '823', 'x': 652, 'y': 2053, 'w': 101, 'h': 19, 'ocrText': 'Odběratel', 'rawOcrText': 'Odběratel', 'confPts': 91, 'typeOfObject': 'word'}
+{'codeName': '824', 'x': 768, 'y': 2054, 'w': 90, 'h': 19, 'ocrText': '(Razítko', 'rawOcrText': '(Razítko', 'confPts': 66, 'typeOfObject': 'word'}
+{'codeName': '825', 'x': 868, 'y': 2058, 'w': 13, 'h': 14, 'ocrText': 'a', 'rawOcrText': 'a', 'confPts': 93, 'typeOfObject': 'word'}
+{'codeName': '826', 'x': 891, 'y': 2054, 'w': 89, 'h': 20, 'ocrText': 'pedpis):', 'rawOcrText': 'pedpis):', 'confPts': 71, 'typeOfObject': 'unknown'}
