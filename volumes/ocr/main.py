@@ -1,6 +1,7 @@
 from SolutionOCR import SolutionOCR, imageDebug
 
-ImageFile = "./input/Seznam.jpg"
+# ImageFile = "./input/seznam.jpg"
+ImageFile = "./input/uctenka.jpg"
 output_path1 = './output/imageDebugv1.jpg'
 output_path2 = './output/imageDebug2.jpg'
 
