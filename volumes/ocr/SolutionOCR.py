@@ -50,10 +50,8 @@ class SolutionOCR:
 
     def OCR(self, imageFile, filter=True, filterType="gauss"):
         base = {
-            "data": [],
             "dataGauss": [],
-            "dataCont": [],
-            "dataConfirmed": []
+            "dataCont": []
         }
 
         image = Image.open(imageFile)
@@ -87,59 +85,31 @@ class SolutionOCR:
         contImage = imageForOCR.filter(ImageFilter.CONTOUR)
         resultsCont = pytesseract.image_to_data(contImage, lang=self.language, output_type=Output.DICT)
 
-        for a in range(0, len(resultsGauss["text"])):
-            xcoordsGauss = resultsGauss["left"][a]
-            ycoordsGauss = resultsGauss["top"][a]
-            widthGauss = resultsGauss["width"][a]
-            heightGauss = resultsGauss["height"][a]
+        print(resultsGauss)
 
-            textGauss = resultsGauss["text"][a]
-            confPtsGauss = int(resultsGauss["conf"][a])
+        for i in range(0, len(resultsGauss["text"])):
+            xcoordsGauss = resultsGauss["left"][i]
+            ycoordsGauss = resultsGauss["top"][i]
+            widthGauss = resultsGauss["width"][i]
+            heightGauss = resultsGauss["height"][i]
 
-            object = {
-                "codeName": str(a),
-                "x": xcoordsGauss,
-                "y": ycoordsGauss,
-                "w": widthGauss,
-                "h": heightGauss,
-                "ocrText": textGauss,
-                "rawOcrText": textGauss,
-                "confPts": confPtsGauss,
-                "typeOfObject": "unknown"
-            }
-            base["dataGauss"].append(object)
+            textGauss = resultsGauss["text"][i]
+            confPtsGauss = int(resultsGauss["conf"][i])
 
-            for b in range(0, len(resultsCont["text"])):
-                xcoordsCont = resultsCont["left"][b]
-                ycoordsCont = resultsCont["top"][b]
-                widthCont = resultsCont["width"][b]
-                heightCont = resultsCont["height"][b]
-
-                textCont = resultsCont["text"][b]
-                confPtsCont = int(resultsCont["conf"][b])
-
-                if confPtsGauss > self.minConfPts:
-                    if xcoordsGauss == xcoordsCont:
-                        if ycoordsGauss == ycoordsCont:
-                            if textGauss == textCont:
-                                confirText = textGauss
-                                confirX = xcoordsGauss
-                                confirY = ycoordsGauss
-                                confirW = widthGauss
-                                confirH = heightGauss
-
-                                object = {
-                                    "codeName": str(a),
-                                    "x": confirX,
-                                    "y": confirY,
-                                    "w": confirW,
-                                    "h": confirH,
-                                    "ocrText": confirText,
-                                    "rawOcrText": confirText,
-                                    "confPts": 100,
-                                    "typeOfObject": "unknown"
-                                }
-                                base["dataConfirmed"].append(object)
+            if confPtsGauss >= self.minConfPts:
+                if int(xcoordsGauss) != 0:
+                    object = {
+                        "codeName": str(i),
+                        "x": xcoordsGauss,
+                        "y": ycoordsGauss,
+                        "w": widthGauss,
+                        "h": heightGauss,
+                        "ocrText": textGauss,
+                        "rawOcrText": textGauss,
+                        "confPts": confPtsGauss,
+                        "typeOfObject": "unknown"
+                    }
+                    base["dataGauss"].append(object)
 
         for i in range(0, len(resultsCont["text"])):
             xcoordsCont = resultsCont["left"][i]
@@ -150,50 +120,22 @@ class SolutionOCR:
             textCont = resultsCont["text"][i]
             confPtsCont = int(resultsCont["conf"][i])
 
-            object = {
-                "codeName": str(i),
-                "x": xcoordsCont,
-                "y": ycoordsCont,
-                "w": widthCont,
-                "h": heightCont,
-                "ocrText": textCont,
-                "rawOcrText": textCont,
-                "confPts": confPtsCont,
-                "typeOfObject": "unknown"
-            }
-            base["dataCont"].append(object)
+            if confPtsCont >= self.minConfPts:
+                if int(xcoordsCont) != 0:
+                    object = {
+                        "codeName": str(i),
+                        "x": xcoordsCont,
+                        "y": ycoordsCont,
+                        "w": widthCont,
+                        "h": heightCont,
+                        "ocrText": textCont,
+                        "rawOcrText": textCont,
+                        "confPts": confPtsCont,
+                        "typeOfObject": "unknown"
+                    }
+                    base["dataCont"].append(object)
 
         return base
-        """
-        for i in range(0, len(results["text"])):
-            xcoords = results["left"][i]
-            ycoords = results["top"][i]
-            width = results["width"][i]
-            height = results["height"][i]
-
-            ocrText = results["text"][i]
-            confPts = int(results["conf"][i])
-
-            rawOcrText = results["text"][i]
-
-            if confPts > self.minConfPts:
-                object = {
-                    "codeName": str(i),
-                    "x": xcoords,
-                    "y": ycoords,
-                    "w": width,
-                    "h": height,
-                    "ocrText": ocrText,
-                    "rawOcrText": rawOcrText,
-                    "confPts": confPts,
-                    "typeOfObject": "unknown"
-                }
-                base["data"].append(object)
-
-        return base
-        """
-
-
 
     def filter(self, base):
         keyUnits = ["m","g","s"]
@@ -205,7 +147,9 @@ class SolutionOCR:
 
         dictionary = enchant.Dict("cs")
         output = {
-            "data": []
+            "dataGauss": [],
+            "dataCont": [],
+            "dataConfirmed": []
         }
 
         for record in base["dataGauss"]:
@@ -233,41 +177,41 @@ class SolutionOCR:
                 if  None != chackNumberAndUnits(rawOcrText, allUnits):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "number and unit"
-                    output["data"].append(record)
+                    output["dataGauss"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif  None != chackUnits(rawOcrText, allUnits):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "unit"
-                    output["data"].append(record)
+                    output["dataGauss"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif  None != chackUnits(rawOcrText, currencies):
                     record["ocrText"] = rawOcrText
-                    record["typeOfObject"] = "currencie"
-                    output["data"].append(record)
+                    record["typeOfObject"] = "currency"
+                    output["dataGauss"].append(record)
                 elif None != re.match('[0-9][0-9](:[0-9][0-9])+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "time"
-                    output["data"].append(record)
+                    output["dataGauss"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif None != re.match('[0-9][0-9][\.\/][0-9][0-9][\.\/][0-9][0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "date"
-                    output["data"].append(record)
+                    output["dataGauss"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif None != re.match('[0-9]+[\.\,][0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "decimal number"
-                    output["data"].append(record)
+                    output["dataGauss"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif None != re.match('[0-9]+[\.\,][0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "decimal number"
-                    output["data"].append(record)
+                    output["dataGauss"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif None != re.match('[0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "integer number"
-                    output["data"].append(record)
+                    output["dataGauss"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 else:
                     ocrTextClear = ""
@@ -278,27 +222,28 @@ class SolutionOCR:
                         if  None != chackUnits(ocrTextClear, allUnits):
                             record["ocrText"] = rawOcrText
                             record["typeOfObject"] = "unit"
-                            output["data"].append(record)
+                            output["dataGauss"].append(record)
                             print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                         elif  None != chackUnits(ocrTextClear, currencies):
                             record["ocrText"] = rawOcrText
-                            record["typeOfObject"] = "currencie"
-                            output["data"].append(record)
+                            record["typeOfObject"] = "currency"
+                            output["dataGauss"].append(record)
                             print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                         elif dictionary.check(ocrTextClear):
                             record["ocrText"] = rawOcrText
                             record["typeOfObject"] = "word"
-                            output["data"].append(record)
+                            output["dataGauss"].append(record)
                             print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                         else:
                             record["ocrText"] = rawOcrText
-                            output["data"].append(record)
+                            output["dataGauss"].append(record)
                             print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
-        for record in base["dataConfirmed"]:
+
+        for record in base["dataCont"]:
             a = 60
             b = 35
             rawOcrText = record["rawOcrText"]
-            ID = int(record["codeName"])
+            ID = record["codeName"]
             confPts = record["confPts"]
             if rawOcrText.isspace() or not rawOcrText:
                 print(str(ID) + " - " + str(record["confPts"]) + " - " + "\" \" - "+ str(record["rawOcrText"]))
@@ -319,41 +264,41 @@ class SolutionOCR:
                 if  None != chackNumberAndUnits(rawOcrText, allUnits):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "number and unit"
-                    output["data"].append(record)
+                    output["dataCont"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif  None != chackUnits(rawOcrText, allUnits):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "unit"
-                    output["data"].append(record)
+                    output["dataCont"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif  None != chackUnits(rawOcrText, currencies):
                     record["ocrText"] = rawOcrText
-                    record["typeOfObject"] = "currencie"
-                    output["data"].append(record)
+                    record["typeOfObject"] = "currency"
+                    output["dataCont"].append(record)
                 elif None != re.match('[0-9][0-9](:[0-9][0-9])+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "time"
-                    output["data"].append(record)
+                    output["dataCont"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif None != re.match('[0-9][0-9][\.\/][0-9][0-9][\.\/][0-9][0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "date"
-                    output["data"].append(record)
+                    output["dataCont"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif None != re.match('[0-9]+[\.\,][0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "decimal number"
-                    output["data"].append(record)
+                    output["dataCont"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif None != re.match('[0-9]+[\.\,][0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "decimal number"
-                    output["data"].append(record)
+                    output["dataCont"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 elif None != re.match('[0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "integer number"
-                    output["data"].append(record)
+                    output["dataCont"].append(record)
                     print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                 else:
                     ocrTextClear = ""
@@ -364,25 +309,24 @@ class SolutionOCR:
                         if  None != chackUnits(ocrTextClear, allUnits):
                             record["ocrText"] = rawOcrText
                             record["typeOfObject"] = "unit"
-                            output["data"].append(record)
+                            output["dataCont"].append(record)
                             print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                         elif  None != chackUnits(ocrTextClear, currencies):
                             record["ocrText"] = rawOcrText
-                            record["typeOfObject"] = "currencie"
-                            output["data"].append(record)
+                            record["typeOfObject"] = "currency"
+                            output["dataCont"].append(record)
                             print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                         elif dictionary.check(ocrTextClear):
                             record["ocrText"] = rawOcrText
                             record["typeOfObject"] = "word"
-                            output["data"].append(record)
+                            output["dataCont"].append(record)
                             print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                         else:
                             record["ocrText"] = rawOcrText
-                            output["data"].append(record)
+                            output["dataCont"].append(record)
                             print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
 
-
-
+       
 
 
                 # ocrTextClear = ""
@@ -421,6 +365,46 @@ class SolutionOCR:
                 #
                 #
 
+        for a in range(len(base["dataGauss"])):
+            xcoordsGauss = base["dataGauss"][a]["x"]
+            ycoordsGauss = base["dataGauss"][a]["y"]
+            widthGauss = base["dataGauss"][a]["w"]
+            heightGauss = base["dataGauss"][a]["h"]
+            typeGauss = base["dataGauss"][a]["typeOfObject"]
+
+            textGauss = base["dataGauss"][a]["ocrText"]
+            confPtsGauss = int(base["dataGauss"][a]["confPts"])
+
+            for b in range(len(base["dataCont"])):
+                xcoordsCont = base["dataCont"][b]["x"]
+                ycoordsCont = base["dataCont"][b]["y"]
+                textCont = base["dataCont"][b]["ocrText"]
+
+                if confPtsGauss >= self.minConfPts:
+                    if xcoordsGauss - xcoordsCont <= 5:
+                        if ycoordsGauss - ycoordsCont <= 5:
+                            if textGauss == textCont:
+                                #if typeGauss != "unknown":
+
+                                confirText = textGauss
+                                confirX = xcoordsGauss
+                                confirY = ycoordsGauss
+                                confirW = widthGauss
+                                confirH = heightGauss
+                                confirType = typeGauss
+
+                                object = {
+                                    "codeName": str(a),
+                                    "x": confirX,
+                                    "y": confirY,
+                                    "w": confirW,
+                                    "h": confirH,
+                                    "ocrText": confirText,
+                                    "rawOcrText": confirText,
+                                    "confPts": 100,
+                                    "typeOfObject": confirType
+                                }
+                                output["dataConfirmed"].append(object)
         print("finish")
         return output
 
@@ -443,14 +427,14 @@ def imageDebug(imageFile, dictionary, path):
     ping = (233, 51, 255)
     purple = (88, 24, 69)
     font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf", 16)
-    for i in range(len(dictionary["data"])):
-        xcoords = dictionary["data"][i]["x"]
-        ycoords = dictionary["data"][i]["y"]
-        width = dictionary["data"][i]["w"]
-        height = dictionary["data"][i]["h"]
-        textImage = dictionary["data"][i]["ocrText"]
-        ID = dictionary["data"][i]["codeName"]
-        type = dictionary["data"][i]["typeOfObject"]
+    for i in range(len(dictionary)):
+        xcoords = dictionary[i]["x"]
+        ycoords = dictionary[i]["y"]
+        width = dictionary[i]["w"]
+        height = dictionary[i]["h"]
+        textImage = dictionary[i]["ocrText"]
+        ID = dictionary[i]["codeName"]
+        type = dictionary[i]["typeOfObject"]
         color = red
         if type == "unknown":
             color = red
@@ -468,7 +452,7 @@ def imageDebug(imageFile, dictionary, path):
             color = purpleLight
         elif type == "unit":
             color = ping
-        elif type == "currencie":
+        elif type == "currency":
             color = purple
 
 
