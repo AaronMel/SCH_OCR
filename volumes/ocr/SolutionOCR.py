@@ -70,17 +70,6 @@ def noiseFilter(input):
     else:
         return True
         
-        
-    
-
-    
-    
-    
-
-
-
-    
-
 
 
 class SolutionOCR:
@@ -98,6 +87,7 @@ class SolutionOCR:
         gaussImage = imageForOCR.filter(ImageFilter.GaussianBlur(1))
         boxImage = imageForOCR.filter(ImageFilter.BoxBlur(5))
         blurImage = imageForOCR.filter(ImageFilter.BLUR)
+        
         y = datetime.datetime.now() - x
         print(y, " image pripering")
         
