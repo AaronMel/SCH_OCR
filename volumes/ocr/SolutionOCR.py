@@ -3,8 +3,10 @@ from pytesseract import Output
 from PIL import Image, ImageFont, ImageDraw, ImageFilter
 import enchant
 import re
-
 from difflib import SequenceMatcher
+
+
+import datetime
 
 
 def rectangle2(draw, x, y, lenght, height, Outline):
@@ -67,139 +69,19 @@ def noiseFilter(input):
         return False
     else:
         return True
-    
-    
-    
-    
-
-
-def outputSortingOCR(input, minConfPts):
-    base = {
-        "data": []
-    }
-    
-    for i in range(0, len(input["text"])):
         
-        xcoords = input["left"][i]
-        ycoords = input["top"][i]
-        width = input["width"][i]
-        height = input["height"][i]
-        ocrText = input["text"][i]
-        confPts = int(input["conf"][i])
-        rawOcrText = input["text"][i]
-        if confPts >= minConfPts and (xcoords != 0 or ycoords != 0) :
-            object = {
-                "codeName": str(i),
-                "x": xcoords,
-                "y": ycoords,
-                "w": width,
-                "h": height,
-                "ocrText": ocrText,
-                "rawOcrText": rawOcrText,
-                "confPts": confPts,
-                "typeOfObject": "unknown",
-                "numberOfFinds": 1
-            }
-            base["data"].append(object)
-    return base
+        
     
 
-def comperOCR(input):
     
-    overlayMin = 0.9
-    bothOverlayMin = 0.7
-    scequenceRatioMin = 0.5
     
-    output = {
-        "data": []
-    }
     
-    for i in range(len(input["results"])):
-        result = input["results"][i]
-        if i > -1:
-            for j in range(len(result["data"])):
-                added = True
-                for k in range(len(output["data"])):
-                    x1 = result["data"][j]["x"]
-                    x2 = output["data"][k]["x"]
-                    y1 = result["data"][j]["y"]
-                    y2 = output["data"][k]["y"]
-                    h1 = result["data"][j]["h"]
-                    h2 = output["data"][k]["h"]
-                    w1 = result["data"][j]["w"]
-                    w2 = output["data"][k]["w"]
-                    p3 = rectangleOverlay(x1, x2, y1, y2, w1, w2, h1, h2)
-                    R1 = p3 / (h1 * w1)
-                    R2 = p3 / (h2 * w2)
-                    if R1 >= overlayMin or R2 >= overlayMin or (R1 >= bothOverlayMin and R2 >= bothOverlayMin) :
-                        textImage1 = result["data"][j]["ocrText"]
-                        textImage2 = output["data"][k]["ocrText"]
-                        
-                        len1 = len(textImage1)
-                        len2 = len(textImage2)
-                        
-                        ratio1 = 0.5
-                        ratio2 = 0.5
-                        
-                        if len2 > 0:
-                            ratio1 = len1 / len2
-                            if len1 > 0:
-                                ratio2 = len2 / len1
-                            else:
-                                ratio2 = 0
-                                ratio1 = -100
-                        else:
-                            ratio1 = 0
-                            ratio2 = -100
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        scequenceRatio = SequenceMatcher(None, textImage1, textImage2).ratio()
-                        if  1 == scequenceRatio:
-                            added = False
-                            output["data"][k]["numberOfFinds"] = output["data"][k]["numberOfFinds"]  + 2
-                            # print("schodné - ", textImage1, " - ", textImage2, " - ", output["data"][k]["numberOfFinds"])
-                        elif scequenceRatioMin <= scequenceRatio:
-                            record = result["data"][j]
-                            record["codeName"] = result["data"][j]["codeName"]
-                            output["data"][k]["numberOfFinds"] = output["data"][k]["numberOfFinds"] + scequenceRatio * 2 * ratio2
-                            record["numberOfFinds"] = record["numberOfFinds"] + scequenceRatio * 2 * ratio1
-                            output["data"].append(record)
-                            added = False
-                            # print("podobné - ", textImage1, " - ", textImage2, " - ", output["data"][k]["numberOfFinds"])
-                        else:
-                            output["data"][k]["numberOfFinds"] = output["data"][k]["numberOfFinds"] - (1 - scequenceRatio * 2 * ratio2)
-                            record["numberOfFinds"] = record["numberOfFinds"] - (1 - scequenceRatio * 2 * ratio1)
-                            added = False
-                            record = result["data"][j]
-                            record["codeName"] = str(j)
-                            output["data"].append(record)
-                            # print("neschodné - ", textImage1, " - ", textImage2, " - ", output["data"][k]["numberOfFinds"])
-            
-                if added:
-                    if noiseFilter(result["data"][j]["ocrText"]):
-                        record = result["data"][j]
-                        record["codeName"] = str(j)
-                        output["data"].append(record)
-                        # print("nenalezeno - ", result["data"][j]["ocrText"])
-                    # else:
-                        # print("šum - ", result["data"][j]["ocrText"])
-    output2 = {
-        "data": []
-    }
-    
-    for i in range(len(output["data"])):
-        result = output["data"][i]
-        if result["numberOfFinds"] >= 1:
-            output2["data"].append(result)
-    
-    return output2
+
+
 
     
+
+
 
 class SolutionOCR:
     def __init__(self, language, minConfPts):
@@ -207,7 +89,8 @@ class SolutionOCR:
         self.minConfPts = minConfPts
 
     def OCR(self, imageFile):
-
+        print("OCR start")
+        x = datetime.datetime.now()
 
         image = Image.open(imageFile)
         imageForOCR = image.copy()
@@ -215,32 +98,325 @@ class SolutionOCR:
         gaussImage = imageForOCR.filter(ImageFilter.GaussianBlur(1))
         boxImage = imageForOCR.filter(ImageFilter.BoxBlur(5))
         blurImage = imageForOCR.filter(ImageFilter.BLUR)
-        output_path3 = './output/imageDebugv3.jpg'
+        y = datetime.datetime.now() - x
+        print(y, " image pripering")
         
-        output = {
+        results = {
             "results": []
         }
+
+        result = self.outputSortingOCR(pytesseract.image_to_data(imageForOCR, lang=self.language, output_type=Output.DICT),self.minConfPts)
+        results["results"].append(result)
+        y = datetime.datetime.now() - x
+        x = datetime.datetime.now()
+        print(y, " OCR 1 strart")
+        result = self.outputSortingOCR(pytesseract.image_to_data(gaussImage, lang=self.language, output_type=Output.DICT),self.minConfPts)
+        results["results"].append(result)
+        y = datetime.datetime.now() - x
+        x = datetime.datetime.now()
+        print(y, " OCR 2 strart")
+        result = self.outputSortingOCR(pytesseract.image_to_data(blurImage, lang=self.language, output_type=Output.DICT),self.minConfPts)
+        results["results"].append(result)
+        y = datetime.datetime.now() - x
+        x = datetime.datetime.now()
+        print(y, " OCR 3 strart")
+        output = self.comperOCR(results)
+        y = datetime.datetime.now() - x
+        x = datetime.datetime.now()
+        print(y, " comper OCR strart 1")
         
-        result = outputSortingOCR(pytesseract.image_to_data(imageForOCR, lang=self.language, output_type=Output.DICT),0)
-        output["results"].append(result)
-        result = outputSortingOCR(pytesseract.image_to_data(gaussImage, lang=self.language, output_type=Output.DICT),0)
-        output["results"].append(result)
-        result = outputSortingOCR(pytesseract.image_to_data(blurImage, lang=self.language, output_type=Output.DICT),0)
-        output["results"].append(result)
-        return comperOCR(output)
+        output = self.sortingFilter(output)
+        y = datetime.datetime.now() - x
+        x = datetime.datetime.now()
+        print(y, " sorting filter finish")
+        
+        output = self.multiplicityFilter(output)
+        y = datetime.datetime.now() - x
+        x = datetime.datetime.now()
+        print(y, " multiplicity filter strart 1")
+        
+        results = {
+            "results": []
+        }
+        results["results"].append(output)
+        output = self.comperOCR(results)
+        y = datetime.datetime.now() - x
+        x = datetime.datetime.now()
+        print(y, " comper OCR strart 2")
+        
+        output = self.multiplicityFilter(output)
+        y = datetime.datetime.now() - x
+        x = datetime.datetime.now()
+        print(y, " multiplicity filter strart 2")
+        
+        return output
+        
+        
+    def comperOCR(self, input):
+        
+        overlayMin = 0.7                # 0.1 - 1
+        bothOverlayMin = 0.5           # 0.1 - 1
+        scequenceRatioMin = 0.4         # 0.1 - 1
+        
+        buffer = {
+            "data": []
+        }
+        
+        for i in range(len(input["results"])):
+            result = input["results"][i]
+            if i > -1:
+                for j in range(len(result["data"])):
+                    added = True
+                    for k in range(len(buffer["data"])):
+                        x1 = result["data"][j]["x"]
+                        x2 = buffer["data"][k]["x"]
+                        y1 = result["data"][j]["y"]
+                        y2 = buffer["data"][k]["y"]
+                        h1 = result["data"][j]["h"]
+                        h2 = buffer["data"][k]["h"]
+                        w1 = result["data"][j]["w"]
+                        w2 = buffer["data"][k]["w"]
+                        p3 = rectangleOverlay(x1, x2, y1, y2, w1, w2, h1, h2)
+                        R1 = p3 / (h1 * w1)
+                        R2 = p3 / (h2 * w2)
+                        if R1 >= overlayMin or R2 >= overlayMin or (R1 >= bothOverlayMin and R2 >= bothOverlayMin) :
+                            textImage1 = result["data"][j]["ocrText"]
+                            textImage2 = buffer["data"][k]["ocrText"]
+                            len1 = len(textImage1)
+                            len2 = len(textImage2)
+                            
+                            ratio1 = 0.5
+                            ratio2 = 0.5
+                            
+                            if len2 > 0:
+                                ratio1 = len1 / len2
+                                if len1 > 0:
+                                    ratio2 = len2 / len1
+                                else:
+                                    ratio2 = 0
+                                    ratio1 = -100
+                            else:
+                                ratio1 = 0
+                                ratio2 = -100
+                            
+                            
+                            scequenceRatio = SequenceMatcher(None, textImage1, textImage2).ratio()
+                            # print(buffer["data"][k]["codeName"], " - ", textImage1," - ", textImage2," - ", R1," - ", R2," - ", scequenceRatio)
+                            if  1 == scequenceRatio:
+                                added = False
+                                buffer["data"][k]["numberOfFinds"] = buffer["data"][k]["numberOfFinds"]  + 1
+                                # print("shodné - ", textImage1," - ", textImage2," - ", R1," - ", R1)
+                            elif scequenceRatioMin <= scequenceRatio:
+                                record = result["data"][j]
+                                record["codeName"] = buffer["data"][k]["codeName"]
+                                buffer["data"][k]["numberOfFinds"] = buffer["data"][k]["numberOfFinds"] + scequenceRatio  * ratio2
+                                record["numberOfFinds"] = record["numberOfFinds"] + scequenceRatio  * ratio1
+                                buffer["data"].append(record)
+                                added = False
+                                
+                            else:
+                                buffer["data"][k]["numberOfFinds"] = buffer["data"][k]["numberOfFinds"] - (scequenceRatioMin - scequenceRatio * ratio2)
+                                record["numberOfFinds"] = record["numberOfFinds"] - (scequenceRatioMin - scequenceRatio * ratio1)
+                                added = False
+                                record = result["data"][j]
+                                record["codeName"] = buffer["data"][k]["codeName"]
+                                buffer["data"].append(record)
+                
+                    if added:
+                        record = result["data"][j]
+                        record["codeName"] = len(buffer["data"])
+                        buffer["data"].append(record)
+
+        output = {
+            "data": []
+        }
+        
+        for i in range(len(buffer["data"])):
+            result = buffer["data"][i]
+            if result["numberOfFinds"] >= 0.5:
+                output["data"].append(result)
+        output["data"] = sorted(output["data"], key=lambda student: student["codeName"])
+        return output
+
+    def outputSortingOCR(self, input, minConfPts):
+        base = {
+            "data": []
+        }
+        
+        for i in range(0, len(input["text"])):
+            
+            xcoords = input["left"][i]
+            ycoords = input["top"][i]
+            width = input["width"][i]
+            height = input["height"][i]
+            ocrText = input["text"][i]
+            confPts = int(input["conf"][i])
+            rawOcrText = input["text"][i]
+            if confPts >= minConfPts and (xcoords != 0 or ycoords != 0) and noiseFilter(rawOcrText) :
+                object = {
+                    "codeName": i,
+                    "x": xcoords,
+                    "y": ycoords,
+                    "w": width,
+                    "h": height,
+                    "ocrText": ocrText,
+                    "rawOcrText": rawOcrText,
+                    "confPts": confPts,
+                    "typeOfObject": "unknown",
+                    "numberOfFinds": 1
+                }
+                base["data"].append(object)
+        return base
         
         
         
-    
+        
+    def multiplicityFilter(self, input):
+        output = {
+            "data": []
+        }
+        
+        buffer = {
+            "data": []
+        }
+        
+        for i in range(len(input["data"])):
+            if len(buffer["data"]) == 0:
+                buffer["data"].append(input["data"][i])
+            else:
+                if input["data"][i]["codeName"] == buffer["data"][0]["codeName"]:
+                    buffer["data"].append(input["data"][i])
+                else:
+                    
+                    if len(buffer["data"]) == 1:
+                        
+                        # print(str(buffer["data"][0]["codeName"]), " ",end ="")
+                        # for j in range(len(buffer["data"])):
+                        #     print(str(buffer["data"][j]["rawOcrText"]), " ", end ="")
+                        # print("")
+                        
+                        if buffer["data"][0]["numberOfFinds"] > 1:
+                            output["data"].append(buffer["data"][0])
+                        elif buffer["data"][0]["numberOfFinds"] > 0.5:
+                            if buffer["data"][0]["confPts"] > 50:
+                                output["data"].append(buffer["data"][0])
+                        else:
+                            if buffer["data"][0]["confPts"] > 90:
+                                output["data"].append(buffer["data"][0])
+                            
+                        buffer = {
+                            "data": []
+                        }
+                        buffer["data"].append(input["data"][i])
+                        
+                    else:
+                        buffer["data"] = sorted(buffer["data"], key=lambda student: student["numberOfFinds"])
+                        if buffer["data"][-1]["numberOfFinds"] <= buffer["data"][-2]["numberOfFinds"] + 1:
+                            # a = buffer["data"][-1]
+                            # b = buffer["data"][-2]
+                            # buffer = {
+                            #     "data": []
+                            # }
+                            # 
+                            # buffer["data"].append(b)
+                            # buffer["data"].append(a)
+                            
+                            # print(str(buffer["data"][0]["codeName"]), " ",end =" ")
+                            # for j in range(len(buffer["data"])):
+                            #     print(str(buffer["data"][j]["rawOcrText"]), " ", end =" ")
+                            # print("")
+                            
+                            # buffer = self.sortingFilter(buffer)
+                            if buffer["data"][-1]["typeOfObject"] != "unknown" and buffer["data"][-2]["typeOfObject"] == "unknown":
+                                output["data"].append(buffer["data"][-1])
+                            elif buffer["data"][-1]["typeOfObject"] == "unknown" and buffer["data"][-2]["typeOfObject"] != "unknown":
+                                output["data"].append(buffer["data"][-2])
+                            else:
+                                if buffer["data"][-1]["confPts"] >= buffer["data"][-2]["confPts"]:
+                                    output["data"].append(buffer["data"][-1])
+                                else:
+                                    output["data"].append(buffer["data"][-2])
+                        else:
+                            output["data"].append(buffer["data"][-1])
+                        
+                        # print(str(buffer["data"][0]["codeName"]), " ",end =" ")
+                        # for j in range(len(buffer["data"])):
+                        #      print(str(buffer["data"][j]["rawOcrText"]), " ", end =" ")
+                        # print("")
+                        buffer = {
+                            "data": []
+                        }
+                        buffer["data"].append(input["data"][i])
+                        
+            
+
+            
+        if len(buffer["data"]) == 1:
+        
+            # print(str(buffer["data"][0]["codeName"]), " ",end = "")
+            # for j in range(len(buffer["data"])):
+            #     print(str(buffer["data"][j]["rawOcrText"]), " ", end = "")
+            # print("")
+        
+            if buffer["data"][0]["numberOfFinds"] > 1:
+                output["data"].append(buffer["data"][0])
+            elif buffer["data"][0]["numberOfFinds"] > 0.5:
+                if buffer["data"][0]["confPts"] > 50:
+                    output["data"].append(buffer["data"][0])
+            else:
+                if buffer["data"][0]["confPts"] > 90:
+                    output["data"].append(buffer["data"][0])
+                    
+            buffer["data"].append(input["data"][i])
+                
+        else:
+            buffer["data"] = sorted(buffer["data"], key=lambda student: student["numberOfFinds"])
+            if buffer["data"][-1]["numberOfFinds"] <= buffer["data"][-2]["numberOfFinds"] + 0.5:
+                
+                
+                # a = buffer["data"][-1]
+                # b = buffer["data"][-2]
+                # buffer = {
+                #     "data": []
+                # }
+                # 
+                # buffer["data"].append(b)
+                # buffer["data"].append(a)
+                # 
+                # buffer = self.sortingFilter(buffer)
+                
+                if buffer["data"][-1]["typeOfObject"] != "unknown" and buffer["data"][-2]["typeOfObject"] == "unknown":
+                    output["data"].append(buffer["data"][-1])
+                elif buffer["data"][-1]["typeOfObject"] == "unknown" and buffer["data"][-2]["typeOfObject"] != "unknown":
+                    output["data"].append(buffer["data"][-2])
+                else:
+                    if buffer["data"][-1]["confPts"] >= buffer["data"][-2]["confPts"]:
+                        output["data"].append(buffer["data"][-1])
+                    else:
+                        output["data"].append(buffer["data"][-2])
+            else:
+                output["data"].append(buffer["data"][-1])
+                
+            # print(str(buffer["data"][0]["codeName"]), " ", end =" ")
+            # for j in range(len(buffer["data"])):
+            #     print(str(buffer["data"][j]["rawOcrText"]), " ", end =" ")
+            # print("")
+                        
+                    
+                    
+        
+        return output
+        
+        
         
 
-    def filter(self, base):
+    def sortingFilter(self, base):
+        
         a = 60
         keyUnits = ["m", "g", "s"]
         prefixes = ["k", "d", "c", "m"]
         units = ["ks", "PCS", "n\\.", "č\\.", "h", "m", "d"]
         allUnits = units + unitsMaker(keyUnits, prefixes)
-        # print(allUnits)
         currencies = ["kč", "czk", "eur", "eu", "usd", "gbp", "$", "€", "£"]
 
         regex = re.compile(
@@ -258,10 +434,10 @@ class SolutionOCR:
         }
 
         for record in base["data"]:
-            rawOcrText = record["rawOcrText"]
-            ID = record["codeName"]
-            confPts = record["confPts"]
-            if True:
+            if record["typeOfObject"] == "unknown":
+                rawOcrText = record["rawOcrText"]
+                ID = record["codeName"]
+                confPts = record["confPts"]
                 if  None != re.match(regex, rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "URL"
@@ -281,12 +457,12 @@ class SolutionOCR:
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "currencie"
                     output["data"].append(record)
-                elif None != re.match('[0-9][0-9](:[0-9][0-9])+', rawOcrText):
+                elif None != re.match('([0-9][0-9](:[0-9][0-9])+\\.?)$', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "time"
                     output["data"].append(record)
                     #print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - " + str(record["ocrText"]))
-                elif None != re.match('[0-9][0-9][\\.\\/][0-9][0-9][\\.\\/][0-9][0-9]+', rawOcrText):
+                elif None != re.match('[0-9]+[\\.\\/][0-9][0-9][\\.\\/][0-9][0-9]+', rawOcrText):
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "date"
                     output["data"].append(record)
@@ -296,12 +472,19 @@ class SolutionOCR:
                     record["typeOfObject"] = "decimal number"
                     output["data"].append(record)
                     #print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - " + str(record["ocrText"]))
-                elif None != re.match('[0-9]+', rawOcrText) and None == re.search('[a-z]', rawOcrText.lower()):
+                elif None != re.match('[0-9]+', rawOcrText) and None == re.search('[a-z]', rawOcrText.lower()) and None == re.search('\W', rawOcrText.lower()):
 
                     record["ocrText"] = rawOcrText
                     record["typeOfObject"] = "integer number"
                     output["data"].append(record)
                     #print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
+                elif None != re.match('(.{1,64}\\.[a-z]{2,3})$', rawOcrText):
+
+                    record["ocrText"] = rawOcrText
+                    record["typeOfObject"] = "domain"
+                    output["data"].append(record)
+                    #print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
+                
                 else:
                     ocrTextClear = ""
                     for character in rawOcrText:
@@ -327,13 +510,15 @@ class SolutionOCR:
                             if confPts <= a:
                                 words = dictionary.suggest(rawOcrText.replace("*"," ").replace("-"," ").replace("/"," ").replace("."," "))
                                 if int(len(words)) > 0:
-                                    record["ocrText"] =  words[0]
-                                    record["typeOfObject"] = "repaired word"
+                                    #record["ocrText"] =  words[0]
+                                    # record["typeOfObject"] = "repaired word"
+                                    record["ocrText"] = rawOcrText
+                                    record["typeOfObject"] = "unknown"
                                     output["data"].append(record)
                                     #print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                                 else:
                                     record["ocrText"] = rawOcrText
-                                    record["typeOfObject"] = "deleted"
+                                    record["typeOfObject"] = "unknown"
                                     output["data"].append(record)
                             else:
                                 record["ocrText"] = rawOcrText
@@ -346,8 +531,12 @@ class SolutionOCR:
                             #print(str(ID) + " - " + str(record["confPts"]) + " - " + str(record["typeOfObject"]) + " - "+ str(record["ocrText"]))
                         else:
                             record["ocrText"] = rawOcrText
-                            record["typeOfObject"] = "deleted"
+                            record["typeOfObject"] = "unknown"
                             output["data"].append(record)
+            else:
+                output["data"].append(record)
+            
+            
         return output
 
 
@@ -375,7 +564,7 @@ def imageDebug(imageFile, dictionary, path):
         width = dictionary["data"][i]["w"]
         height = dictionary["data"][i]["h"]
         textImage = dictionary["data"][i]["ocrText"]
-        ID = dictionary["data"][i]["codeName"]
+        ID = str(dictionary["data"][i]["codeName"])
         type = dictionary["data"][i]["typeOfObject"]
         color = red
         if type == "unknown":
@@ -400,8 +589,11 @@ def imageDebug(imageFile, dictionary, path):
             color = greenLight
         elif type == "repaired word":
             color = greenLight
+        elif type == "domain":
+            color = greenLight
         elif type == "deleted":
             color = black
+        
 
         draw = rectangle2(draw, xcoords, ycoords, width, height, color)
         draw.text((xcoords, ycoords), textImage + "\n" + ID, font=font, fill=color)
