@@ -16,7 +16,7 @@ with open('./output/imageLog.txt', "w", encoding="utf-8") as log:
 with open('./output/imageLog2.txt', "w", encoding="utf-8") as log:
     log.write("Log file 2" + "\n")
 ### SEZNAM ###
-"""
+
 ocr_cz = SolutionOCR("ces", 5)
 output = ocr_cz.OCR(ImageFile1)
 imageDebug(ImageFile1, output["dataGauss"], output_basic)
@@ -41,3 +41,4 @@ textFile = open(outputTextFile_path, 'w+', encoding='utf-8')
 for i in range(len(output["dataConfirmed"])):
     textFile.write(str(output["dataConfirmed"][i]) + '\n')
 textFile.close()
+"""
