@@ -5,7 +5,7 @@ services:
       context: "docker/ocr"
     container_name: "ocr"
     volumes: 
-      - "./volumes/ocr:/home/App"
+      - "./volumes/ocr:/srv/condor"
         
       
         

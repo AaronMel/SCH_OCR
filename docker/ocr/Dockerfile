@@ -22,8 +22,10 @@ RUN apt-get clean
 RUN apt-get autoremove
 
 
-ADD . /home/App
-WORKDIR /home/App
+
+ADD . /srv
+ADD . /srv/condor
+WORKDIR /srv/condor/
 
 COPY pip3install.conf .
 RUN pip3 install -r pip3install.conf
