@@ -1,0 +1,12 @@
+version: "3.8"
+services: 
+  ocr:
+    build:
+      context: "docker/ocr"
+    container_name: "ocr"
+    volumes: 
+      - "./volumes/ocr:/home/App"
+        
+      
+        
+    
