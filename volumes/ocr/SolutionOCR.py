@@ -63,8 +63,6 @@ def noiseFilter(input):
         return False
     elif None != re.match('(\\ *\\—\\—+\\ *)', input):
         return False
-    elif None != re.match('(\\ *\\-\\-+\\ *)', input):
-        return False
     elif None != re.match('(\\ *\\|+\\ *)', input):
         return False
     else:
