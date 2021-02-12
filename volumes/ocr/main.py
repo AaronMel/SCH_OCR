@@ -1,4 +1,4 @@
-from SolutionOCR import SolutionOCR, imageDebug
+from condor import SolutionOCR, imageDebug
 import datetime
 
 import reportlab.rl_config
