@@ -1,4 +1,4 @@
-from condor import SolutionOCR, imageDebug
+from condor import Condor, imageDebug
 import datetime
 
 import reportlab.rl_config
@@ -11,14 +11,14 @@ from reportlab.pdfbase.ttfonts import TTFont
 from PIL import ImageFont
 
 # ImageFile = "./input/seznam.jpg"
-# ImageFile = "./input/uctenka.jpg"
+ImageFile = "./input/uctenka.jpg"
 # ImageFile = "./input/tabulka.png"
-ImageFile = "./input/smlouva.jpg"
+# ImageFile = "./input/smlouva.jpg"
 
 output_path1 = './output/imageDebugv1.jpg'
 output_path2 = './output/imageDebug2.jpg'
 output_path3 = './output/imageDebug3.pdf'
-ocr_cz = SolutionOCR("ces", 30)
+ocr_cz = Condor("ces", 30)
 
 
 x = datetime.datetime.now()
@@ -81,7 +81,7 @@ for record in output["data"]:
         my_text = my_canvas.beginText()
         my_text.setTextOrigin(x, img_height - y - round(h) * (3/4))
         my_text.setFillColor(colors.transparent)
-        #my_text.setFillColor(colors.red)
+        # my_text.setFillColor(colors.red)
         my_text.setFont("Arial", best[0])
         my_text.textLine(text=text)
         my_canvas.drawText(my_text)

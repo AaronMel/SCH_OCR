@@ -1,12 +1,45 @@
+# Pillow
+# Imaging Library
+# Pillow==8.0.1
+from PIL import Image, ImageFont, ImageDraw, ImageFilter
+
+# Tesseract
+# Tesseract Library
+# pytesseract==0.3.6
 import pytesseract
 from pytesseract import Output
-from PIL import Image, ImageFont, ImageDraw, ImageFilter
+
+# Enchant
+# Enchant Library
+# pyenchant==3.1.1
 import enchant
+
+# RegExe
+# Regular expression Library
+# regex==2020.11.13
 import re
+
+# difflib
+# differences Library
+# cdifflib==1.2.5
 from difflib import SequenceMatcher
 
+# ReportLab
+# generating PDF Library
+# reportlab==3.5.59
+import reportlab.rl_config
+from reportlab.lib import utils
+from reportlab.lib import colors
+from reportlab.pdfgen import canvas
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 
+# DateTime
+# Date and Time Library
+# DateTime==4.3
 import datetime
+
+
 
 
 def rectangle2(draw, x, y, lenght, height, Outline):
@@ -47,15 +80,15 @@ def rectangleOverlay(x11, x21, y11, y21, w11, w21, h11, h21):
     x22 = x21 + w21
     y12 = y11 + h11
     y22 = y21 + h21
-    
+
     dx = min(x12, x22) - max(x11, x21)
     dy = min(y12, y22) - max(y11, y21)
     if (dx>=0) and (dy>=0):
         return dx*dy
     else:
         return 0
-    
-    
+
+
 def noiseFilter(input):
     if input.isspace() or not input:
         return False
@@ -67,10 +100,9 @@ def noiseFilter(input):
         return False
     else:
         return True
-        
 
 
-class SolutionOCR:
+class Condor:
     def __init__(self, language, minConfPts):
         self.language = language
         self.minConfPts = minConfPts
@@ -81,14 +113,14 @@ class SolutionOCR:
 
         image = Image.open(imageFile)
         imageForOCR = image.copy()
-        
+
         gaussImage = imageForOCR.filter(ImageFilter.GaussianBlur(1))
         boxImage = imageForOCR.filter(ImageFilter.BoxBlur(5))
         blurImage = imageForOCR.filter(ImageFilter.BLUR)
-        
+
         y = datetime.datetime.now() - x
         print(y, " image pripering")
-        
+
         results = {
             "results": []
         }
@@ -112,17 +144,17 @@ class SolutionOCR:
         y = datetime.datetime.now() - x
         x = datetime.datetime.now()
         print(y, " comper OCR strart 1")
-        
+
         output = self.sortingFilter(output)
         y = datetime.datetime.now() - x
         x = datetime.datetime.now()
         print(y, " sorting filter finish")
-        
+
         output = self.multiplicityFilter(output)
         y = datetime.datetime.now() - x
         x = datetime.datetime.now()
         print(y, " multiplicity filter strart 1")
-        
+
         results = {
             "results": []
         }
@@ -131,25 +163,23 @@ class SolutionOCR:
         y = datetime.datetime.now() - x
         x = datetime.datetime.now()
         print(y, " comper OCR strart 2")
-        
+
         output = self.multiplicityFilter(output)
         y = datetime.datetime.now() - x
         x = datetime.datetime.now()
         print(y, " multiplicity filter strart 2")
-        
+
         return output
-        
-        
+
     def comperOCR(self, input):
-        
         overlayMin = 0.7                # 0.1 - 1
         bothOverlayMin = 0.5           # 0.1 - 1
         scequenceRatioMin = 0.4         # 0.1 - 1
-        
+
         buffer = {
             "data": []
         }
-        
+
         for i in range(len(input["results"])):
             result = input["results"][i]
             if i > -1:
@@ -172,10 +202,10 @@ class SolutionOCR:
                             textImage2 = buffer["data"][k]["ocrText"]
                             len1 = len(textImage1)
                             len2 = len(textImage2)
-                            
+
                             ratio1 = 0.5
                             ratio2 = 0.5
-                            
+
                             if len2 > 0:
                                 ratio1 = len1 / len2
                                 if len1 > 0:
@@ -186,8 +216,7 @@ class SolutionOCR:
                             else:
                                 ratio1 = 0
                                 ratio2 = -100
-                            
-                            
+
                             scequenceRatio = SequenceMatcher(None, textImage1, textImage2).ratio()
                             # print(buffer["data"][k]["codeName"], " - ", textImage1," - ", textImage2," - ", R1," - ", R2," - ", scequenceRatio)
                             if  1 == scequenceRatio:
@@ -201,7 +230,7 @@ class SolutionOCR:
                                 record["numberOfFinds"] = record["numberOfFinds"] + scequenceRatio  * ratio1
                                 buffer["data"].append(record)
                                 added = False
-                                
+
                             else:
                                 buffer["data"][k]["numberOfFinds"] = buffer["data"][k]["numberOfFinds"] - (scequenceRatioMin - scequenceRatio * ratio2)
                                 record["numberOfFinds"] = record["numberOfFinds"] - (scequenceRatioMin - scequenceRatio * ratio1)
@@ -209,7 +238,7 @@ class SolutionOCR:
                                 record = result["data"][j]
                                 record["codeName"] = buffer["data"][k]["codeName"]
                                 buffer["data"].append(record)
-                
+
                     if added:
                         record = result["data"][j]
                         record["codeName"] = len(buffer["data"])
@@ -218,7 +247,7 @@ class SolutionOCR:
         output = {
             "data": []
         }
-        
+
         for i in range(len(buffer["data"])):
             result = buffer["data"][i]
             if result["numberOfFinds"] >= 0.5:
@@ -230,9 +259,8 @@ class SolutionOCR:
         base = {
             "data": []
         }
-        
+
         for i in range(0, len(input["text"])):
-            
             xcoords = input["left"][i]
             ycoords = input["top"][i]
             width = input["width"][i]
@@ -255,19 +283,16 @@ class SolutionOCR:
                 }
                 base["data"].append(object)
         return base
-        
-        
-        
-        
+
     def multiplicityFilter(self, input):
         output = {
             "data": []
         }
-        
+
         buffer = {
             "data": []
         }
-        
+
         for i in range(len(input["data"])):
             if len(buffer["data"]) == 0:
                 buffer["data"].append(input["data"][i])
@@ -275,14 +300,10 @@ class SolutionOCR:
                 if input["data"][i]["codeName"] == buffer["data"][0]["codeName"]:
                     buffer["data"].append(input["data"][i])
                 else:
-                    
                     if len(buffer["data"]) == 1:
-                        
                         # print(str(buffer["data"][0]["codeName"]), " ",end ="")
                         # for j in range(len(buffer["data"])):
                         #     print(str(buffer["data"][j]["rawOcrText"]), " ", end ="")
-                        # print("")
-                        
                         if buffer["data"][0]["numberOfFinds"] > 1:
                             output["data"].append(buffer["data"][0])
                         elif buffer["data"][0]["numberOfFinds"] > 0.5:
@@ -291,12 +312,10 @@ class SolutionOCR:
                         else:
                             if buffer["data"][0]["confPts"] > 90:
                                 output["data"].append(buffer["data"][0])
-                            
                         buffer = {
                             "data": []
                         }
                         buffer["data"].append(input["data"][i])
-                        
                     else:
                         buffer["data"] = sorted(buffer["data"], key=lambda student: student["numberOfFinds"])
                         if buffer["data"][-1]["numberOfFinds"] <= buffer["data"][-2]["numberOfFinds"] + 1:
