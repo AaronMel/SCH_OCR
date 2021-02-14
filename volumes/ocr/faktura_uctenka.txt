@@ -1,0 +1,26 @@
+IČO prodávajícího (36658111)            # vždy
+DIČ prodávajícího (SK2022218473)        # nemusí ale takřka vždy
+Firma prodávajícího (PharmINFO s.r.o.)  # vždy
+Původní č. dokladu (2019008)            # vždy
+Datum vystavení (01.01.2019)            # vždy
+Měna (€)                                # vždy
+Částka celkem/Cena s DPH (121)          # vždy
+Výše DPH (21) # vždy
+Cena bez DPH (100) # vždy
+
+Datum zdanitelného plnění (01.01.2019)  # nemusí 
+Datum splatnosti (15.01.2020)           # nemusí
+Sídlo firmy prodávajícího (Ružová dolina 6, 821 08, Bratislava 2 - Ružinov, SK, Slovensko) # nemusí
+Banka (TATRABANKA)                      # nemusí 
+Č. účtu (2629107277/1100)               # nemusí
+
+
+
+Položky: 
+    Popis (Pantofel)                    # vždy
+    Měrná jednotka (kg)                 # nemusí 
+    Množství (20)                       # vždy
+    Cena za JEDNOTKU/KUS (5)            # vždy
+    Daň (21 %)                          # vždy
+    Cena s daní (121)                   # vždy
+    Cena bez daně (100)                 # vždy

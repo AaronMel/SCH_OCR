@@ -4,6 +4,11 @@ FROM ubuntu:18.04
 RUN apt-get update 
 RUN apt-get install  python3 -y python3-pip -y
 
+#opencv-python fix
+RUN apt-get install ffmpeg libsm6 libxext6  -y
+RUN python3 -m pip install -U pip
+RUN python3 -m pip install -U setuptools
+
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
