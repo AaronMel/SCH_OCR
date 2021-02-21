@@ -5,8 +5,8 @@ Původní č. dokladu (2019008)            # vždy
 Datum vystavení (01.01.2019)            # vždy
 Měna (€)                                # vždy
 Částka celkem/Cena s DPH (121)          # vždy
-Výše DPH (21) # vždy
-Cena bez DPH (100) # vždy
+Výše DPH (21)                           # vždy
+Cena bez DPH (100)                      # vždy
 
 Datum zdanitelného plnění (01.01.2019)  # nemusí 
 Datum splatnosti (15.01.2020)           # nemusí

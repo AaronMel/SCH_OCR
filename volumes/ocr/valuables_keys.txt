@@ -1,0 +1,19 @@
+IČO
+IČ
+DIČ
+Pokladna
+Datum
+Základ
+DPH
+S DPH
+SDPH
+BKP
+FIK
+
+Provozovna
+Pokladní
+dokladu
+Režim
+PRODEJKA
+PAVEL
+obchod

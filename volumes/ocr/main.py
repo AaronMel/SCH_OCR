@@ -15,7 +15,7 @@ ImageFile = "./input/uctenka.jpg"
 # ImageFile = "./input/tabulka.png"
 # ImageFile = "./input/smlouva.jpg"
 
-output_path1 = './output/imageDebugv1.jpg'
+output_path1 = './output/imageDebug1.jpg'
 output_path2 = './output/imageDebug2.jpg'
 output_path3 = './output/imageDebug3.pdf'
 ocr_cz = Condor("ces", 30)
@@ -95,3 +95,9 @@ textFile = open(outputTextFile_path, 'w+', encoding='utf-8')
 for i in range(len(output["data"])):
     textFile.write(str(output["data"][i]) + '\n')
 textFile.close()
+
+# ROI finder
+#roiKeysFile = "./roi_keypoints.txt"
+#for i in range(len(output["data"])):
+#    roi_finder(roiKeysFile)
+# ROI extraction point
