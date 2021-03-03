@@ -10,7 +10,7 @@ keylist = './valuables_keys.txt'
 ocr_cz = Condor("ces", 30)
 
 def roi_finder(valuableList, imageFile):
-    
+
     output = ocr_cz.OCR(imageFile)
 
     vFile = open(valuableList, "r", encoding='utf-8')
@@ -62,11 +62,17 @@ def roi_finder(valuableList, imageFile):
         Vx = recordMember["x"]
         Vw = recordMember["w"]
 
-        A = Vy
-        B = Vy + (Vh * 0.25)
-        C = Vy + (Vh * 0.5)
-        D = Vy + (Vh * 0.75)
-        E = Vy + Vh
+        Ay = Vy
+        By = Vy + (Vh * 0.25)
+        Cy = Vy + (Vh * 0.5)
+        Dy = Vy + (Vh * 0.75)
+        Ey = Vy + Vh
+
+        Ax = Vx
+        Bx = Vx + (Vw * 0.25)
+        Cx = Vx + (Vw * 0.5)
+        Dx = Vx + (Vw * 0.75)
+        Ex = Vx + Vw
 
         for recordOCR in output["data"]:
             posY = recordOCR["y"]
@@ -75,26 +81,70 @@ def roi_finder(valuableList, imageFile):
             posX = recordOCR["x"]
             posW = recordOCR["w"]
 
-            F = posY
-            G = posY + posH
+            Fy = posY
+            Gy = posY + posH
+
+            Fx = posX
+            Gx = posX + posW
             
             conf = 0
             if Vx < posX:
-                for i in range(F, G+1):
-                    if A == i:
+                for i in range(Fy, Gy+1):
+                    if Ay == i:
                         conf = conf + 1
-                    elif B == i:
+                    elif By == i:
                         conf = conf + 1                
-                    elif C == i:
+                    elif Cy == i:
                         conf = conf + 1
-                    elif D == i:
+                    elif Dy == i:
                         conf = conf + 1
-                    elif E == i:
+                    elif Ey == i:
                         conf = conf + 1
-            #print(conf)
+            #print("Horizontal search conf: {}".format(conf))
             if conf >= 1: 
                 Vname = recordMember["name"]
                 posName = recordOCR["ocrText"]
+                print("######## Horizontal search ########")
+                print("Val: {}".format(Vname))
+                print("Pos: {}".format(posName))
+                confControl = 0
+                for recordControl in wantedBase["members"]:
+                    #print("Record Control: {}".format(recordControl["name"]))
+                    if posName == recordControl["name"]:
+                        confControl = 1
+                if confControl == 0:
+                    object = {
+                        "Vx": Vx,
+                        "Vy": Vy,
+                        "Vw": Vw,
+                        "Vh": Vh,
+                        "Vname": Vname,
+                        "Mx": posX,
+                        "My": posY,
+                        "Mw": posW,
+                        "Mh": posH,
+                        "Mname": posName
+                    }
+                    base["matches"].append(object)
+
+            conf = 0
+            if Vy < posY:
+                for i in range(Fx, Gx+1):
+                    if Ax == i:
+                        conf = conf + 1
+                    elif Bx == i:
+                        conf = conf + 1                
+                    elif Cx == i:
+                        conf = conf + 1
+                    elif Dx == i:
+                        conf = conf + 1
+                    elif Ex == i:
+                        conf = conf + 1
+            #print("Vertical search conf: {}".format(conf))
+            if conf >= 1: 
+                Vname = recordMember["name"]
+                posName = recordOCR["ocrText"]
+                print("######## Vertical search ########")
                 print("Val: {}".format(Vname))
                 print("Pos: {}".format(posName))
                 confControl = 0
