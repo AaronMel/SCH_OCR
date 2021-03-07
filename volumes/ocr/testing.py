@@ -1,7 +1,7 @@
-from condor import Condor, imageDebug
+from condor import Condor
 import datetime
 
-from PIL import Image, ImageFont, ImageDraw, ImageFilter
+from PIL import Image, ImageFont, ImageDraw
 from condor import rectangle2
 
 baseImageFile = "./input/uctenka.jpg"
